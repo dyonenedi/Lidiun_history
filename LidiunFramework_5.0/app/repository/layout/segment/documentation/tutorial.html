@@ -1,0 +1,323 @@
+<h3 id="place" class="tl-1 cl-black-lg no-margin-top"><%TITLE_DOCUMENTATION_3_TR%></h3>
+
+<hr class="divider-05">
+
+<h4 class='cl-red bold'>Primeiro Passo</h4>
+<p class="cl-gray">
+	Faça o Download do Lidiun Framework <a href="/dowloading/">cliando aqui</a>.
+	Em seguida descompacte o arquivo ".rar" na pasta public root do seu apache como a 'www' no Ubuntu ou 'htdocs' do Xampp.
+</p>
+
+<h4 class='cl-red bold'>Configurando</h4>
+<p class="cl-gray">
+	Para melhor funcionamento do Lidiun, é necessário configurá-lo. Para isso na pasta <span class="cl-purple bold">'app/config/'</span> existem 3 arquivos de configuração. 
+	<br>
+	<br>
+	O database_config.php tem as configurações de banco de dados para ambiente local, hmologação e produção.
+	<br>
+	<br>
+	O <span class="cl-purple bold">path_config.php</span> tem as configurações de caminhos. O índice <span class="cl-purple bold">'dif_root_x_public_path'</span> recebe a diferença entre seu diretório public root e a pasta pública do Lidiun. Caso você tenha alterado o document_root no apache para ser na pasta pública do Lidiun, deixe o valor desse índece vazio. O índice <span class="cl-purple bold">'common_css'</span> e o <span class="cl-purple bold">'common_js'</span> recebem os nomes dos arquivos css e js que serão incluidos em todas as páginas por padrão. O índice <span class="cl-purple bold">'public_path'</span> contem os apelidos para os respectivos caminhos que são usados nas renders para específicar caminhos como no exemplo: <br><span class="cl-green-lg bold">echo classPath::$_path['css'];</span>
+	<br> 
+	<br> 
+	O preset_config.php contem configurações gerais pré setadas para melhor aproveitamento do Framework.
+	<br> 
+	O índice <span class="cl-purple bold">'app_name'</span> recebe o nome da aplicação.
+	<br> 
+	O índice <span class="cl-purple bold">'domain'</span> recebe o domínio da sua apliacação.
+	<br> 
+	O índice <span class="cl-purple bold">'description, key_word, author, author_email'</span> recebe seus dados que serão usados no header do html pra ajudá-lo a incorporar pelos buscadores via meta dados.
+	<br> 
+	O índice <span class="cl-purple bold">'default_render'</span> recebe o nome da render que carregará por padrão quando nenhum parâmetro (render) for passado.
+	<br> 
+	O índice <span class="cl-purple bold">'language_default'</span> recebe o idioma padrão que sua aplicação receberá quando o Lidiun não encontrar o idioma do usuário nos arquivos de tradução.
+	<br> 
+	O índice <span class="cl-purple bold">'cookie_lifetime, cookie_path, cookie_secure, cookie_httponly'</span> são configurações para o Cookie. Cuidado ao mudar os valores pois deles depende o bom funcionamento da sessão.
+	<br>
+	O índice <span class="cl-purple bold">'security_code'</span> recebe um password que será usado em plugins como Encrypt para almentar a segurança na sua aplicação.
+	<br>
+	O índice <span class="cl-purple bold">'timezone'</span> recebe a localização padrão para sua aplicação.
+	<br>
+	O índice <span class="cl-purple bold">'support'</span> recebe true ou false. Se true, entra em modo de suporte mostrando uma mensagem amigável aos usuários.
+	<br>
+</p>
+
+<h4 class='cl-red bold'>Criando uma render.</h4>
+<p class="cl-gray">
+	Para começar, basta criar um arquivo com algum código dentro da pasta <span class="cl-purple bold">'app/repository/layout/content/'</span>. Em seguida salve o aquivo <span class="cl-purple bold">"HTML"</span> com o nome em caixa baixa e separado por underline. Para exemplificar vamos criar um arquivo <span class="cl-purple bold">app/repository/layout/conten/golden_box.html</span> com algum conteúdo dentro.
+</p>
+<blockquote>
+<pre class="cl-purple">
+&lt;hr class="clear-40"&gt;
+&lt;div class="col-20 text-center"&gt;
+  &lt;h1&gt;My name is Dyon Enedi.&lt;/h1&gt;
+&lt;/div&gt;
+</pre>
+</blockquote>
+<p>
+	Prontinho, para ver o resultado acesse <span class="cl-purple bold">localhost/golden_box/</span>.
+	<br>
+	Próximo passo é criar uma render para que possamos por algúm código PHP. Para isso vamos criar um arquivo na pasta <span class="cl-purple bold">app/repository/render/</span> e dentro dele criar uma classe com o nome da Render, no nosso caso <span class="cl-purple bold">golden_box</span>. Salve o arquivo arquivo <span class="cl-purple bold">".php"</span> cujo o nome deve ser o mesmo da classe e ser em escrito em caixa baixa separado por underline. Exemplo: <span class="cl-purple bold">app/repository/render/golden_box.php</span>
+</p>
+<blockquote>
+<pre class="cl-purple">
+&lt;?php
+   Class golden_box 
+   {
+      function __construct() {
+			
+      } 
+   }
+</pre>
+</blockquote>
+<p>
+	Agora que nossa render está criada e funcionando, vamos codificá-la.
+	<br>
+	Vamos criar no arquivo html uma Tag chamada <span class="cl-blue bold"><%USER_NAME%></span> que será usada para injetar conteúdo pela Render.
+</p>
+<blockquote>
+<pre class="cl-purple">
+&lt;hr class="clear-40"&gt;
+&lt;div class="col-20 text-center"&gt;
+  &lt;h1&gt;My name is &lt;%USER_NAME%&gt;.&lt;/h1&gt;
+&lt;/div&gt;
+</pre>
+</blockquote>
+<p>
+	Vamos usar os métodos nativos do Lidiun para fazer a substituição da Tag pelo conteúdo, que no caso será o nome. Isso é feito na Render como no exemplo abaixo.
+</p>
+<blockquote>
+		<p class="cl-orange fs-5">
+			Para usar os métodos estáticos das classes nativas do Lidiun é necessário usar o <span class="cl-purple bold">"use"</span> do PHP apontando para a classe <span class="cl-purple bold">(Use Lidiun\Layout;)</span> como no exemplo abaixo onde foi utilizado a classe nativa do Lidiun <span class="cl-purple bold">"Layout"</span> para com os métodos <span class="cl-purple bold">Layout::renderMenu()</span> e <span class="cl-purple bold">Layout::renderFooter</span> autorizar não renderizar o menu e o footer além de fazer a substituição da TAG  <span class="cl-blue bold"><%USER_NAME%></span> pela variável <span class="cl-purple bold">$userName</span> com o método <span class="cl-purple bold">Layout::replaceContent()</span>.
+			<br>
+			Para saber mais sobre a classes <span class="cl-purple bold">Layout</span> e seus métodos <a href="/documentation/native/#layout">clique aqui</a>
+		</p>
+	</blockquote>
+<blockquote>
+<pre class="cl-purple">
+&lt;?php
+   Use Lidiun\Layout;
+
+   Class golden_box 
+   {
+      function __construct() {
+	    Layout::renderMenu(false);
+		Layout::renderFooter(false);
+
+		$userName = 'Dyon Enedi';
+
+		Layout::replaceContent('user_name', $userName);
+      } 
+   }
+</pre>
+</blockquote>
+<p>
+	Parar ver o resultado do código acima, coloque o link <span class="cl-purple bold">localhost/golden_box/</span> no seu navegador.
+	É hora de aprender sobre o Segment. Segments, são segmentos de HTML que podem ser incorporados no Content pela Render. Vamos fazer um exemplo juntos:
+	<br>
+	- Vamos colocar uma TAG no nosso <span class="cl-purple bold">"golden_box.html"</span> chamada <span class="cl-purple bold">"picture"</span>.
+	<br>
+	- Vamos criar um arquivo chamado <span class="cl-purple bold">"picture.html"</span> na no caminho <span class="cl-purple bold">"app/repository/layout/segment/"</span> e por uma tag html img com uma Tag <span class="cl-purple bold">"link"</span> no src.
+	<br>
+	- Vamos abrir nossa Render, chamar o segment para uma variável, fazer a substituição da Tag <span class="cl-purple bold">"link"</span> pelo link desejado e por fim vamos substituir a Tag <span class="cl-purple bold">"picture"</span> pelo nosso segment. Dessa forma podemos trabalhar com os segmentes dinamicamente nas renders aproveitando os blocos de HTML onde e como quisermos.
+	<br>
+	<blockquote>
+		<p class="cl-orange fs-5">
+			OBS: As Tags terminadas em PATH vão escrever o caminho pego através do apelido dado no path_config.php. IMAGE é o índece Path::$_path['image'] e PATH é o que indica que você deseja fazer a substituição da Tag pelo Path automaticamente.
+		</p>
+	</blockquote>
+<blockquote>
+<pre class="cl-purple">
+&lt;hr class="clear-40"&gt;
+&lt;div class="col-20 text-center"&gt;
+  &lt;h1 class="text-center"&gt;My name is &lt;%USER_NAME%&gt;.&lt;/h1&gt;
+  &lt;hr class="clear-10"&gt;
+  &lt;%PICTURE%&gt;
+&lt;/div&gt;
+</pre>
+</blockquote>
+<blockquote>
+<pre class="cl-purple">
+&lt;img src="&lt;PROFILE_PATH&gt;&lt;LINK&gt;" class="img-thumbnail" /&gt;
+</pre>
+</blockquote>
+<blockquote>
+<pre class="cl-purple">
+&lt;?php
+   Use Lidiun\Layout;
+
+   Class golden_box 
+   {
+      function __construct() {
+	    Layout::renderMenu(false);
+		Layout::renderFooter(false);
+
+		$userName = 'Dyon Enedi';
+		Layout::replaceContent('user_name', $userName);
+
+		$segment = Layout::getSegment('picture');
+		$segment = Layout::replaceSegment('link', 'dyon.jpg', $segment);
+		Layout::replaceContent('picture', $segment);
+      } 
+   }
+</pre>
+</blockquote>
+
+	<blockquote>
+		<p class="cl-orange fs-5">
+			Parar ver o resultado do código acima, coloque o link <span class="cl-purple bold">localhost/golden_box/</span> no seu navegador.
+		</p>
+	</blockquote>
+</p>
+
+<h4 class='cl-red bold'>Trabalhando com o banco de dados.</h4>
+<p class="cl-gray">
+	Para trabalhar com Banco de Dados no Lidiun, temos uma classe nativa para isso chamada Database. Para usá-la em uma render você deve usar o <span class="cl-purple bold">"use Lidiun\Database;"</span>. Essa classe tem um método estático <span class="cl-purple bold">Database::query($query,$retorno)</span> que executa a query passada no primeiro parametro e retorna o formato passado no segundo parâmetro que pode ser <span class="cl-purple bold">"boolean, num_rows, array ou object"</span>. Veja um exemplo abaixo:
+	<br>
+<blockquote>
+<pre class="cl-purple">
+&lt;?php
+   Use Lidiun\Layout;
+   Use Lidiun\Database;
+
+   Class golden_box 
+   {
+      function __construct() {
+	    Layout::renderMenu(false);
+		Layout::renderFooter(false);
+
+		$data = Database::query("SELECT first_name FROM user WHERE id = 1", "object");
+		if (Database::$_errorMessage) {
+			exit(Database::$_errorMessage);
+		}
+			
+		$userName = $data[0]->first_name;
+		Layout::replaceContent('user_name', $userName);
+
+		$segment = Layout::getSegment('picture');
+		$segment = Layout::replaceSegment('link', 'dyon.jpg', $segment);
+		Layout::replaceContent('picture', $segment);
+      } 
+   }
+</pre>
+</blockquote>
+
+	<blockquote>
+		<p class="cl-orange fs-5">
+			- Para adiconar rodar esse código na render golden_box será necessário estar configurado o banco de dados no database_config.php e ter uma tabela user com as respectivas colunas. Ao fazer o Download do Lidiun Example, você encontrará um arquivo "lidiun.sql" que contem um banco de dados com tabelas que servem como exemplo e podem ser usados para rodar esse código exemplo.
+			<br>
+			- Veja mais sobre essa classe e seus métodos <a href="/documentation/native/#database">clicando aqui</a>.
+		</p>
+	</blockquote>
+</p>
+
+<h4 class='cl-red bold'>Usando Ajax</h4>
+<p class="cl-gray">
+	Para usar o Ajax do Lidiun vamos criar um formulário no Layout golden_box.html. Para que o ajax seja automatizado pelo bootstrap lidiun.js você precisa dar um id para o formulário o qual será usado no código javascript para submeter o ajax. Além disso é preciso ter dentro do form um input tipo hidden que tenha no name "render" e no value o nome da render que executará o ajax. Veja um exemplo abaixo.
+</p>
+
+<blockquote>
+<pre class="cl-purple">
+&lt;hr class="clear-40"&gt;
+&lt;div class="col-20 text-center"&gt;
+  &lt;h1 class="text-center"&gt;My name is &lt;%USER_NAME%&gt;.&lt;/h1&gt;
+  &lt;hr class="clear-10"&gt;
+  
+  &lt;form id="sendMessageForm"&gt;
+    &lt;input type="hidden" name="render" value="send_message"&gt;
+    &lt;input type="text" name="message"&gt;
+    &lt;button type="submit" class="btn btn-sm btn-blue"&gt;Send&lt;/button&gt;
+  &lt;/form&gt;
+
+  &lt;hr class="clear-10"&gt;
+    &lt;div id="message"&gt;&lt;/div&gt;
+  &lt;hr class="clear-10"&gt;
+
+  &lt;%PICTURE%&gt;
+&lt;/div&gt;
+</pre>
+</blockquote>
+
+<p class="cl-gray">
+	Feito isso precisamos criar um arquivo ".js" no caminho "app/public/js/" que vamos chamar de "golden_box.js" e possa enviar os dados para a render via ajax assim que o formulário for submetido.
+	No exemplo abaixo usamos o evento submit para executar a função do bootstrap Lidiun.js para submeter o ajax pegando o retorno na variavel data e ecrevendo na página. 
+</p>
+
+<blockquote>
+<pre class="cl-purple">
+$(document).ready(function(){
+	$('#sendMessageForm').submit(function(e){
+		var formId = this.id;
+		e.preventDefault();
+		var data = _submit(formId);
+		if (data.reply) {
+			$('#message').html(data.message);
+		} else {
+			alertBar(data.message);
+		}
+	});
+});
+</pre>
+</blockquote>
+
+<p class="cl-gray">
+	Para finalizar nosso exemplo vamos criar a Render que irá receber a requisição ajax e preparar os dados de retorno.
+	OBS: É importante lembrar de incluir o arquivo "js" que criamos acima na Render com o método estático nativo "Layout::addJs('golden_box');" sem a extensão.
+</p>
+
+<blockquote>
+<pre class="cl-purple">
+Use Lidiun\Render;
+Use Lidiun\Request;
+
+Class sendMessage 
+{
+  function __construct() {
+	$parameter = Request::getParameter();
+	if ($parameter && is_array($parameter)) {
+	  $reply = ['reply' => true, 'message' => $parameter['message']];
+	} else {
+	  $reply = ['reply' => false, 'message' => 'Message is required'];
+	}
+
+	Render::setReply($reply);
+  } 
+}
+</pre>
+</blockquote>
+
+<p class="cl-gray">
+	<blockquote>
+		<p class="cl-orange fs-5">
+			Parar ver o resultado do código acima, coloque o link <span class="cl-purple bold">localhost/golden_box/</span> no seu navegador.
+		</p>
+	</blockquote>
+</p>
+
+<h4 class='cl-red bold'>Usando os plugins do Lidiun</h4>
+<p class="cl-gray">
+	PAra usar um Plugin no Lidiun basta coloca-lo na pasta "app/plugin" e usar o name space para chamá-lo como no exemplo abaixo onde usamos o Treatment para tratar os parametros antes de pegá-lo.
+</p>
+
+<blockquote>
+<pre class="cl-purple">
+ Use Lidiun\Render;
+ Use Lidiun\Request;
+ Use Lidiun\Dyonenedi\Treatment;
+
+   Class golden_box 
+   {
+      function __construct() {
+		Treatment::run();
+
+		$parameter = Request::getParameter();
+		if ($parameter && is_array($parameter)) {
+		  $reply = ['reply' => true, 'message' => $parameter['message']];
+		} else {
+			 $reply = ['reply' => false, 'message' => 'Message is required'];
+		}
+
+		Render::setReply();
+      } 
+   }
+</pre>
+</blockquote>

@@ -1,0 +1,9 @@
+order allow,deny
+allow from all
+
+RewriteEngine on
+RewriteBase /app/public
+RewriteCond %{SCRIPT_FILENAME} !-f [OR]
+RewriteCond %{SCRIPT_FILENAME} !-s [OR]
+RewriteCond %{SCRIPT_FILENAME} !-d 
+RewriteRule ^(.*)$ index.php?uri=$1

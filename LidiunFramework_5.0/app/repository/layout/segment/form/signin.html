@@ -1,0 +1,70 @@
+<form id="signinForm">
+	<input type="hidden" name="render" value="signin">
+    
+    <div class="input-group input-group-lg">
+		<span class="input-group-addon">F</span>
+		<input type="text" name="name[first_name]" class="form-control" placeholder="First name" required="" autofocus="">
+	</div>
+	<hr class="clear-20">
+
+	<div class="input-group input-group-lg">
+		<span class="input-group-addon">L</span>
+		<input type="text" name="name[last_name]" class="form-control" placeholder="Last name" required="">
+	</div>
+	<hr class="clear-20">
+
+    <div class="input-group input-group-lg">
+		<span class="input-group-addon">@</span>
+		<input type="email" name="email[email]" class="form-control" placeholder="Email address" required="" autocomplete="on">
+	</div>
+	<hr class="clear-20">
+	
+	<div class="input-group input-group-lg">
+		<span class="input-group-addon">#..</span>
+		<input type="password" name="password[password]" class="form-control" placeholder="Password" required="">
+	</div>
+	<hr class="clear-20">
+
+	<div class="input-group input-group-lg">
+		<span class="input-group-addon">#..</span>
+		<input type="password" class="form-control" placeholder="Password confirmation" required="" id="password">
+	</div>
+	<hr class="clear-20">
+
+	<div class="input-group input-group-lg">
+		<span class="input-group-addon">B</span>
+		<input type="date" name="date[birth]" class="form-control" placeholder="Date of birth" required="">
+	</div>
+	<hr class="clear-20">
+	
+	<div class="checkbox">
+		<input type="radio" class="form-control" name="sex" value="M" checked><%MALE_TR%>
+		<br>
+		<input type="radio" class="form-control" name="sex" value="F"><%FEMALE_TR%>
+    </div>
+    <hr class="clear-10">
+
+    <button type="submit" class="btn btn-sm btn-blue"><%SIGNIN_TR%></button>
+</form>
+
+
+<script type="text/javascript">
+	function check(input) {
+		if (input.value != document.getElementById('password').value) {
+	    	alertBar('The two password addresses must match.');
+	  	}
+	}
+
+	$(document).ready(function(){
+		$('#signinForm').submit(function(e){
+			var formId = this.id;
+			e.preventDefault();
+			var data = _submit(formId);
+			if (data.reply) {
+				redirect('home');
+			} else {
+				alertBar(data.message);
+			}
+		});
+	});
+</script>

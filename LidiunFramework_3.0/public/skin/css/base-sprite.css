@@ -1,0 +1,2184 @@
+/************************************************************************************************************************************************************/
+/*
+/*                                                                     SPRITE DEFAULT
+/*
+/*************************************************************************************************************************************************************/
+
+[class^="icon-symbol1-"] { display: inline-block; width: 32px; height: 32px; background-repeat: no-repeat; vertical-align: middle; background-image: url(/skin/img/icon/sprite_simble1.svg) !important; }
+
+.icon-symbol1-home {
+	background-position: 0 0;
+}
+.icon-symbol1-home2 {
+	background-position: -64px 0;
+}
+.icon-symbol1-home3 {
+	background-position: -128px 0;
+}
+.icon-symbol1-office {
+	background-position: -192px 0;
+}
+.icon-symbol1-newspaper {
+	background-position: -256px 0;
+}
+.icon-symbol1-pencil {
+	background-position: -320px 0;
+}
+.icon-symbol1-pencil2 {
+	background-position: -384px 0;
+}
+.icon-symbol1-quill {
+	background-position: -448px 0;
+}
+.icon-symbol1-pen {
+	background-position: -512px 0;
+}
+.icon-symbol1-blog {
+	background-position: -576px 0;
+}
+.icon-symbol1-droplet {
+	background-position: -640px 0;
+}
+.icon-symbol1-paint-format {
+	background-position: -704px 0;
+}
+.icon-symbol1-image {
+	background-position: -768px 0;
+}
+.icon-symbol1-image2 {
+	background-position: -832px 0;
+}
+.icon-symbol1-images {
+	background-position: -896px 0;
+}
+.icon-symbol1-camera {
+	background-position: -960px 0;
+}
+.icon-symbol1-music {
+	background-position: 0 -64px;
+}
+.icon-symbol1-headphones {
+	background-position: -64px -64px;
+}
+.icon-symbol1-play {
+	background-position: -128px -64px;
+}
+.icon-symbol1-film {
+	background-position: -192px -64px;
+}
+.icon-symbol1-camera2 {
+	background-position: -256px -64px;
+}
+.icon-symbol1-dice {
+	background-position: -320px -64px;
+}
+.icon-symbol1-pacman {
+	background-position: -384px -64px;
+}
+.icon-symbol1-spades {
+	background-position: -448px -64px;
+	width: 40px;
+}
+.icon-symbol1-clubs {
+	background-position: -512px -64px;
+}
+.icon-symbol1-diamonds {
+	background-position: -576px -64px;
+}
+.icon-symbol1-pawn {
+	background-position: -640px -64px;
+}
+.icon-symbol1-bullhorn {
+	background-position: -704px -64px;
+}
+.icon-symbol1-connection {
+	background-position: -768px -64px;
+	width: 40px;
+}
+.icon-symbol1-podcast {
+	background-position: -832px -64px;
+}
+.icon-symbol1-feed {
+	background-position: -896px -64px;
+}
+.icon-symbol1-book {
+	background-position: -960px -64px;
+}
+.icon-symbol1-books {
+	background-position: 0 -128px;
+}
+.icon-symbol1-library {
+	background-position: -64px -128px;
+}
+.icon-symbol1-file {
+	background-position: -128px -128px;
+}
+.icon-symbol1-profile {
+	background-position: -192px -128px;
+}
+.icon-symbol1-file2 {
+	background-position: -256px -128px;
+}
+.icon-symbol1-file3 {
+	background-position: -320px -128px;
+}
+.icon-symbol1-file4 {
+	background-position: -384px -128px;
+}
+.icon-symbol1-copy {
+	background-position: -448px -128px;
+}
+.icon-symbol1-copy2 {
+	background-position: -512px -128px;
+}
+.icon-symbol1-copy3 {
+	background-position: -576px -128px;
+}
+.icon-symbol1-paste {
+	background-position: -640px -128px;
+}
+.icon-symbol1-paste2 {
+	background-position: -704px -128px;
+}
+.icon-symbol1-paste3 {
+	background-position: -768px -128px;
+}
+.icon-symbol1-stack {
+	background-position: -832px -128px;
+}
+.icon-symbol1-folder {
+	background-position: -896px -128px;
+}
+.icon-symbol1-folder-open {
+	background-position: -960px -128px;
+}
+.icon-symbol1-tag {
+	background-position: 0 -192px;
+}
+.icon-symbol1-tags {
+	background-position: -64px -192px;
+	width: 34px;
+}
+.icon-symbol1-barcode {
+	background-position: -128px -192px;
+}
+.icon-symbol1-qrcode {
+	background-position: -192px -192px;
+}
+.icon-symbol1-ticket {
+	background-position: -256px -192px;
+}
+.icon-symbol1-cart {
+	background-position: -320px -192px;
+}
+.icon-symbol1-cart2 {
+	background-position: -384px -192px;
+}
+.icon-symbol1-cart3 {
+	background-position: -448px -192px;
+}
+.icon-symbol1-coin {
+	background-position: -512px -192px;
+}
+.icon-symbol1-credit {
+	background-position: -576px -192px;
+}
+.icon-symbol1-calculate {
+	background-position: -640px -192px;
+}
+.icon-symbol1-support {
+	background-position: -704px -192px;
+}
+.icon-symbol1-phone {
+	background-position: -768px -192px;
+}
+.icon-symbol1-phone-hang-up {
+	background-position: -832px -192px;
+}
+.icon-symbol1-address-book {
+	background-position: -896px -192px;
+}
+.icon-symbol1-notebook {
+	background-position: -960px -192px;
+}
+.icon-symbol1-envelop {
+	background-position: 0 -256px;
+}
+.icon-symbol1-pushpin {
+	background-position: -64px -256px;
+}
+.icon-symbol1-location {
+	background-position: -128px -256px;
+}
+.icon-symbol1-location2 {
+	background-position: -192px -256px;
+}
+.icon-symbol1-compass {
+	background-position: -256px -256px;
+}
+.icon-symbol1-map {
+	background-position: -320px -256px;
+}
+.icon-symbol1-map2 {
+	background-position: -384px -256px;
+}
+.icon-symbol1-history {
+	background-position: -448px -256px;
+	width: 33px;
+}
+.icon-symbol1-clock {
+	background-position: -512px -256px;
+}
+.icon-symbol1-clock2 {
+	background-position: -576px -256px;
+}
+.icon-symbol1-alarm {
+	background-position: -640px -256px;
+}
+.icon-symbol1-alarm2 {
+	background-position: -704px -256px;
+}
+.icon-symbol1-bell {
+	background-position: -768px -256px;
+}
+.icon-symbol1-stopwatch {
+	background-position: -832px -256px;
+}
+.icon-symbol1-calendar {
+	background-position: -896px -256px;
+}
+.icon-symbol1-calendar2 {
+	background-position: -960px -256px;
+}
+.icon-symbol1-print {
+	background-position: 0 -320px;
+}
+.icon-symbol1-keyboard {
+	background-position: -64px -320px;
+	width: 36px;
+}
+.icon-symbol1-screen {
+	background-position: -128px -320px;
+}
+.icon-symbol1-laptop {
+	background-position: -192px -320px;
+}
+.icon-symbol1-mobile {
+	background-position: -256px -320px;
+}
+.icon-symbol1-mobile2 {
+	background-position: -320px -320px;
+}
+.icon-symbol1-tablet {
+	background-position: -384px -320px;
+}
+.icon-symbol1-tv {
+	background-position: -448px -320px;
+}
+.icon-symbol1-cabinet {
+	background-position: -512px -320px;
+}
+.icon-symbol1-drawer {
+	background-position: -576px -320px;
+}
+.icon-symbol1-drawer2 {
+	background-position: -640px -320px;
+}
+.icon-symbol1-drawer3 {
+	background-position: -704px -320px;
+}
+.icon-symbol1-box-add {
+	background-position: -768px -320px;
+}
+.icon-symbol1-box-remove {
+	background-position: -832px -320px;
+}
+.icon-symbol1-download {
+	background-position: -896px -320px;
+}
+.icon-symbol1-upload {
+	background-position: -960px -320px;
+}
+.icon-symbol1-disk {
+	background-position: 0 -384px;
+}
+.icon-symbol1-storage {
+	background-position: -64px -384px;
+}
+.icon-symbol1-undo {
+	background-position: -128px -384px;
+}
+.icon-symbol1-redo {
+	background-position: -192px -384px;
+}
+.icon-symbol1-flip {
+	background-position: -256px -384px;
+}
+.icon-symbol1-flip2 {
+	background-position: -320px -384px;
+}
+.icon-symbol1-undo2 {
+	background-position: -384px -384px;
+}
+.icon-symbol1-redo2 {
+	background-position: -448px -384px;
+}
+.icon-symbol1-forward {
+	background-position: -512px -384px;
+}
+.icon-symbol1-reply {
+	background-position: -576px -384px;
+}
+.icon-symbol1-bubble {
+	background-position: -640px -384px;
+}
+.icon-symbol1-bubbles {
+	background-position: -704px -384px;
+	width: 36px;
+}
+.icon-symbol1-bubbles2 {
+	background-position: -768px -384px;
+	width: 36px;
+}
+.icon-symbol1-bubble2 {
+	background-position: -832px -384px;
+}
+.icon-symbol1-bubbles3 {
+	background-position: -896px -384px;
+	width: 36px;
+}
+.icon-symbol1-bubbles4 {
+	background-position: -960px -384px;
+	width: 36px;
+}
+.icon-symbol1-user {
+	background-position: 0 -448px;
+}
+.icon-symbol1-users {
+	background-position: -64px -448px;
+}
+.icon-symbol1-user2 {
+	background-position: -128px -448px;
+}
+.icon-symbol1-users2 {
+	background-position: -192px -448px;
+}
+.icon-symbol1-user3 {
+	background-position: -256px -448px;
+}
+.icon-symbol1-user4 {
+	background-position: -320px -448px;
+}
+.icon-symbol1-quotes-left {
+	background-position: -384px -448px;
+}
+.icon-symbol1-busy {
+	background-position: -448px -448px;
+}
+.icon-symbol1-spinner {
+	background-position: -512px -448px;
+}
+.icon-symbol1-spinner2 {
+	background-position: -576px -448px;
+}
+.icon-symbol1-spinner3 {
+	background-position: -640px -448px;
+}
+.icon-symbol1-spinner4 {
+	background-position: -704px -448px;
+}
+.icon-symbol1-spinner5 {
+	background-position: -768px -448px;
+}
+.icon-symbol1-spinner6 {
+	background-position: -832px -448px;
+}
+.icon-symbol1-binoculars {
+	background-position: -896px -448px;
+}
+.icon-symbol1-search {
+	background-position: -960px -448px;
+}
+.icon-symbol1-zoom-in {
+	background-position: 0 -512px;
+}
+.icon-symbol1-zoom-out {
+	background-position: -64px -512px;
+}
+.icon-symbol1-expand {
+	background-position: -128px -512px;
+}
+.icon-symbol1-contract {
+	background-position: -192px -512px;
+}
+.icon-symbol1-expand2 {
+	background-position: -256px -512px;
+}
+.icon-symbol1-contract2 {
+	background-position: -320px -512px;
+}
+.icon-symbol1-key {
+	background-position: -384px -512px;
+}
+.icon-symbol1-key2 {
+	background-position: -448px -512px;
+}
+.icon-symbol1-lock {
+	background-position: -512px -512px;
+}
+.icon-symbol1-lock2 {
+	background-position: -576px -512px;
+}
+.icon-symbol1-unlocked {
+	background-position: -640px -512px;
+}
+.icon-symbol1-wrench {
+	background-position: -704px -512px;
+}
+.icon-symbol1-settings {
+	background-position: -768px -512px;
+}
+.icon-symbol1-equalizer {
+	background-position: -832px -512px;
+}
+.icon-symbol1-cog {
+	background-position: -896px -512px;
+}
+.icon-symbol1-cogs {
+	background-position: -960px -512px;
+}
+.icon-symbol1-cog2 {
+	background-position: 0 -576px;
+}
+.icon-symbol1-hammer {
+	background-position: -64px -576px;
+}
+.icon-symbol1-wand {
+	background-position: -128px -576px;
+}
+.icon-symbol1-aid {
+	background-position: -192px -576px;
+}
+.icon-symbol1-bug {
+	background-position: -256px -576px;
+}
+.icon-symbol1-pie {
+	background-position: -320px -576px;
+}
+.icon-symbol1-stats {
+	background-position: -384px -576px;
+}
+.icon-symbol1-bars {
+	background-position: -448px -576px;
+}
+.icon-symbol1-bars2 {
+	background-position: -512px -576px;
+}
+.icon-symbol1-gift {
+	background-position: -576px -576px;
+}
+.icon-symbol1-trophy {
+	background-position: -640px -576px;
+}
+.icon-symbol1-glass {
+	background-position: -704px -576px;
+}
+.icon-symbol1-mug {
+	background-position: -768px -576px;
+}
+.icon-symbol1-food {
+	background-position: -832px -576px;
+}
+.icon-symbol1-leaf {
+	background-position: -896px -576px;
+	height: 29px;
+}
+.icon-symbol1-rocket {
+	background-position: -960px -576px;
+}
+.icon-symbol1-meter {
+	background-position: 0 -640px;
+}
+.icon-symbol1-meter2 {
+	background-position: -64px -640px;
+}
+.icon-symbol1-dashboard {
+	background-position: -128px -640px;
+}
+.icon-symbol1-hammer2 {
+	background-position: -192px -640px;
+}
+.icon-symbol1-fire {
+	background-position: -256px -640px;
+	width: 37px;
+}
+.icon-symbol1-lab {
+	background-position: -320px -640px;
+}
+.icon-symbol1-magnet {
+	background-position: -384px -640px;
+}
+.icon-symbol1-remove {
+	background-position: -448px -640px;
+}
+.icon-symbol1-remove2 {
+	background-position: -512px -640px;
+}
+.icon-symbol1-briefcase {
+	background-position: -576px -640px;
+}
+.icon-symbol1-airplane {
+	background-position: -640px -640px;
+}
+.icon-symbol1-truck {
+	background-position: -704px -640px;
+}
+.icon-symbol1-road {
+	background-position: -768px -640px;
+}
+.icon-symbol1-accessibility {
+	background-position: -832px -640px;
+}
+.icon-symbol1-target {
+	background-position: -896px -640px;
+}
+.icon-symbol1-shield {
+	background-position: -960px -640px;
+}
+.icon-symbol1-lightning {
+	background-position: 0 -704px;
+}
+.icon-symbol1-switch {
+	background-position: -64px -704px;
+}
+.icon-symbol1-power-cord {
+	background-position: -128px -704px;
+}
+.icon-symbol1-signup {
+	background-position: -192px -704px;
+}
+.icon-symbol1-list {
+	background-position: -256px -704px;
+}
+.icon-symbol1-list2 {
+	background-position: -320px -704px;
+}
+.icon-symbol1-numbered-list {
+	background-position: -384px -704px;
+}
+.icon-symbol1-menu {
+	background-position: -448px -704px;
+}
+.icon-symbol1-menu2 {
+	background-position: -512px -704px;
+}
+.icon-symbol1-tree {
+	background-position: -576px -704px;
+}
+.icon-symbol1-cloud {
+	background-position: -640px -704px;
+}
+.icon-symbol1-cloud-download {
+	background-position: -704px -704px;
+}
+.icon-symbol1-cloud-upload {
+	background-position: -768px -704px;
+}
+.icon-symbol1-download2 {
+	background-position: -832px -704px;
+}
+.icon-symbol1-upload2 {
+	background-position: -896px -704px;
+}
+.icon-symbol1-download3 {
+	background-position: -960px -704px;
+}
+.icon-symbol1-upload3 {
+	background-position: 0 -768px;
+}
+.icon-symbol1-globe {
+	background-position: -64px -768px;
+}
+.icon-symbol1-earth {
+	background-position: -128px -768px;
+}
+.icon-symbol1-link {
+	background-position: -192px -768px;
+	width: 33px;
+	height: 33px;
+}
+.icon-symbol1-flag {
+	background-position: -256px -768px;
+}
+.icon-symbol1-attachment {
+	background-position: -320px -768px;
+	height: 30px;
+}
+.icon-symbol1-eye {
+	background-position: -384px -768px;
+}
+.icon-symbol1-eye-blocked {
+	background-position: -448px -768px;
+}
+.icon-symbol1-eye2 {
+	background-position: -512px -768px;
+}
+.icon-symbol1-bookmark {
+	background-position: -576px -768px;
+}
+.icon-symbol1-bookmarks {
+	background-position: -640px -768px;
+}
+.icon-symbol1-brightness-medium {
+	background-position: -704px -768px;
+}
+.icon-symbol1-brightness-contrast {
+	background-position: -768px -768px;
+}
+.icon-symbol1-contrast {
+	background-position: -832px -768px;
+}
+.icon-symbol1-star {
+	background-position: -896px -768px;
+}
+.icon-symbol1-star2 {
+	background-position: -960px -768px;
+}
+.icon-symbol1-star3 {
+	background-position: 0 -832px;
+}
+.icon-symbol1-heart {
+	background-position: -64px -832px;
+}
+.icon-symbol1-heart2 {
+	background-position: -128px -832px;
+}
+.icon-symbol1-heart-broken {
+	background-position: -192px -832px;
+}
+.icon-symbol1-thumbs-up {
+	background-position: -256px -832px;
+}
+.icon-symbol1-thumbs-up2 {
+	background-position: -320px -832px;
+}
+.icon-symbol1-happy {
+	background-position: -384px -832px;
+}
+.icon-symbol1-happy2 {
+	background-position: -448px -832px;
+}
+.icon-symbol1-smiley {
+	background-position: -512px -832px;
+}
+.icon-symbol1-smiley2 {
+	background-position: -576px -832px;
+}
+.icon-symbol1-tongue {
+	background-position: -640px -832px;
+}
+.icon-symbol1-tongue2 {
+	background-position: -704px -832px;
+}
+.icon-symbol1-sad {
+	background-position: -768px -832px;
+}
+.icon-symbol1-sad2 {
+	background-position: -832px -832px;
+}
+.icon-symbol1-wink {
+	background-position: -896px -832px;
+}
+.icon-symbol1-wink2 {
+	background-position: -960px -832px;
+}
+.icon-symbol1-grin {
+	background-position: 0 -896px;
+}
+.icon-symbol1-grin2 {
+	background-position: -64px -896px;
+}
+.icon-symbol1-cool {
+	background-position: -128px -896px;
+}
+.icon-symbol1-cool2 {
+	background-position: -192px -896px;
+}
+.icon-symbol1-angry {
+	background-position: -256px -896px;
+}
+.icon-symbol1-angry2 {
+	background-position: -320px -896px;
+}
+.icon-symbol1-evil {
+	background-position: -384px -896px;
+	height: 32px;
+}
+.icon-symbol1-evil2 {
+	background-position: -448px -896px;
+	height: 32px;
+}
+.icon-symbol1-shocked {
+	background-position: -512px -896px;
+}
+.icon-symbol1-shocked2 {
+	background-position: -576px -896px;
+}
+.icon-symbol1-confused {
+	background-position: -640px -896px;
+}
+.icon-symbol1-confused2 {
+	background-position: -704px -896px;
+}
+.icon-symbol1-neutral {
+	background-position: -768px -896px;
+}
+.icon-symbol1-neutral2 {
+	background-position: -832px -896px;
+}
+.icon-symbol1-wondering {
+	background-position: -896px -896px;
+}
+.icon-symbol1-wondering2 {
+	background-position: -960px -896px;
+}
+.icon-symbol1-point-up {
+	background-position: 0 -960px;
+}
+.icon-symbol1-point-right {
+	background-position: -64px -960px;
+}
+.icon-symbol1-point-down {
+	background-position: -128px -960px;
+}
+.icon-symbol1-point-left {
+	background-position: -192px -960px;
+}
+.icon-symbol1-warning {
+	background-position: -256px -960px;
+	width: 33px;
+}
+.icon-symbol1-notification {
+	background-position: -320px -960px;
+}
+.icon-symbol1-question {
+	background-position: -384px -960px;
+}
+.icon-symbol1-info {
+	background-position: -448px -960px;
+}
+.icon-symbol1-info2 {
+	background-position: -512px -960px;
+}
+.icon-symbol1-blocked {
+	background-position: -576px -960px;
+}
+.icon-symbol1-cancel-circle {
+	background-position: -640px -960px;
+}
+.icon-symbol1-checkmark-circle {
+	background-position: -704px -960px;
+}
+.icon-symbol1-spam {
+	background-position: -768px -960px;
+}
+.icon-symbol1-close {
+	background-position: -832px -960px;
+}
+.icon-symbol1-checkmark {
+	background-position: -896px -960px;
+}
+.icon-symbol1-checkmark2 {
+	background-position: -960px -960px;
+}
+.icon-symbol1-spell-check {
+	background-position: 0 -1024px;
+}
+.icon-symbol1-minus {
+	background-position: -64px -1024px;
+}
+.icon-symbol1-plus {
+	background-position: -128px -1024px;
+}
+.icon-symbol1-enter {
+	background-position: -192px -1024px;
+}
+.icon-symbol1-exit {
+	background-position: -256px -1024px;
+}
+.icon-symbol1-play2 {
+	background-position: -320px -1024px;
+}
+.icon-symbol1-pause {
+	background-position: -384px -1024px;
+}
+.icon-symbol1-stop {
+	background-position: -448px -1024px;
+}
+.icon-symbol1-backward {
+	background-position: -512px -1024px;
+}
+.icon-symbol1-forward2 {
+	background-position: -576px -1024px;
+}
+.icon-symbol1-play3 {
+	background-position: -640px -1024px;
+}
+.icon-symbol1-pause2 {
+	background-position: -704px -1024px;
+}
+.icon-symbol1-stop2 {
+	background-position: -768px -1024px;
+}
+.icon-symbol1-backward2 {
+	background-position: -832px -1024px;
+}
+.icon-symbol1-forward3 {
+	background-position: -896px -1024px;
+}
+.icon-symbol1-first {
+	background-position: -960px -1024px;
+}
+.icon-symbol1-last {
+	background-position: 0 -1088px;
+}
+.icon-symbol1-previous {
+	background-position: -64px -1088px;
+}
+.icon-symbol1-next {
+	background-position: -128px -1088px;
+}
+.icon-symbol1-eject {
+	background-position: -192px -1088px;
+}
+.icon-symbol1-volume-high {
+	background-position: -256px -1088px;
+	width: 34px;
+}
+.icon-symbol1-volume-medium {
+	background-position: -320px -1088px;
+}
+.icon-symbol1-volume-low {
+	background-position: -384px -1088px;
+}
+.icon-symbol1-volume-mute {
+	background-position: -448px -1088px;
+}
+.icon-symbol1-volume-mute2 {
+	background-position: -512px -1088px;
+}
+.icon-symbol1-volume-increase {
+	background-position: -576px -1088px;
+}
+.icon-symbol1-volume-decrease {
+	background-position: -640px -1088px;
+}
+.icon-symbol1-loop {
+	background-position: -704px -1088px;
+}
+.icon-symbol1-loop2 {
+	background-position: -768px -1088px;
+}
+.icon-symbol1-loop3 {
+	background-position: -832px -1088px;
+}
+.icon-symbol1-shuffle {
+	background-position: -896px -1088px;
+}
+.icon-symbol1-arrow-up-left {
+	background-position: -960px -1088px;
+}
+.icon-symbol1-arrow-up {
+	background-position: 0 -1152px;
+}
+.icon-symbol1-arrow-up-right {
+	background-position: -64px -1152px;
+}
+.icon-symbol1-arrow-right {
+	background-position: -128px -1152px;
+}
+.icon-symbol1-arrow-down-right {
+	background-position: -192px -1152px;
+}
+.icon-symbol1-arrow-down {
+	background-position: -256px -1152px;
+}
+.icon-symbol1-arrow-down-left {
+	background-position: -320px -1152px;
+}
+.icon-symbol1-arrow-left {
+	background-position: -384px -1152px;
+}
+.icon-symbol1-arrow-up-left2 {
+	background-position: -448px -1152px;
+}
+.icon-symbol1-arrow-up2 {
+	background-position: -512px -1152px;
+}
+.icon-symbol1-arrow-up-right2 {
+	background-position: -576px -1152px;
+}
+.icon-symbol1-arrow-right2 {
+	background-position: -640px -1152px;
+}
+.icon-symbol1-arrow-down-right2 {
+	background-position: -704px -1152px;
+}
+.icon-symbol1-arrow-down2 {
+	background-position: -768px -1152px;
+}
+.icon-symbol1-arrow-down-left2 {
+	background-position: -832px -1152px;
+}
+.icon-symbol1-arrow-left2 {
+	background-position: -896px -1152px;
+}
+.icon-symbol1-arrow-up-left3 {
+	background-position: -960px -1152px;
+}
+.icon-symbol1-arrow-up3 {
+	background-position: 0 -1216px;
+}
+.icon-symbol1-arrow-up-right3 {
+	background-position: -64px -1216px;
+}
+.icon-symbol1-arrow-right3 {
+	background-position: -128px -1216px;
+}
+.icon-symbol1-arrow-down-right3 {
+	background-position: -192px -1216px;
+}
+.icon-symbol1-arrow-down3 {
+	background-position: -256px -1216px;
+}
+.icon-symbol1-arrow-down-left3 {
+	background-position: -320px -1216px;
+}
+.icon-symbol1-arrow-left3 {
+	background-position: -384px -1216px;
+}
+.icon-symbol1-tab {
+	background-position: -448px -1216px;
+}
+.icon-symbol1-checkbox-checked {
+	background-position: -512px -1216px;
+}
+.icon-symbol1-checkbox-unchecked {
+	background-position: -576px -1216px;
+}
+.icon-symbol1-checkbox-partial {
+	background-position: -640px -1216px;
+}
+.icon-symbol1-radio-checked {
+	background-position: -704px -1216px;
+}
+.icon-symbol1-radio-unchecked {
+	background-position: -768px -1216px;
+}
+.icon-symbol1-crop {
+	background-position: -832px -1216px;
+}
+.icon-symbol1-scissors {
+	background-position: -896px -1216px;
+}
+.icon-symbol1-filter {
+	background-position: -960px -1216px;
+}
+.icon-symbol1-filter2 {
+	background-position: 0 -1280px;
+}
+.icon-symbol1-font {
+	background-position: -64px -1280px;
+}
+.icon-symbol1-text-height {
+	background-position: -128px -1280px;
+}
+.icon-symbol1-text-width {
+	background-position: -192px -1280px;
+}
+.icon-symbol1-bold {
+	background-position: -256px -1280px;
+}
+.icon-symbol1-underline {
+	background-position: -320px -1280px;
+}
+.icon-symbol1-italic {
+	background-position: -384px -1280px;
+}
+.icon-symbol1-strikethrough {
+	background-position: -448px -1280px;
+}
+.icon-symbol1-omega {
+	background-position: -512px -1280px;
+}
+.icon-symbol1-sigma {
+	background-position: -576px -1280px;
+}
+.icon-symbol1-table {
+	background-position: -640px -1280px;
+}
+.icon-symbol1-table2 {
+	background-position: -704px -1280px;
+}
+.icon-symbol1-insert-template {
+	background-position: -768px -1280px;
+}
+.icon-symbol1-pilcrow {
+	background-position: -832px -1280px;
+}
+.icon-symbol1-left-to-right {
+	background-position: -896px -1280px;
+}
+.icon-symbol1-right-to-left {
+	background-position: -960px -1280px;
+}
+.icon-symbol1-paragraph-left {
+	background-position: 0 -1344px;
+}
+.icon-symbol1-paragraph-center {
+	background-position: -64px -1344px;
+}
+.icon-symbol1-paragraph-right {
+	background-position: -128px -1344px;
+}
+.icon-symbol1-paragraph-justify {
+	background-position: -192px -1344px;
+}
+.icon-symbol1-paragraph-left2 {
+	background-position: -256px -1344px;
+}
+.icon-symbol1-paragraph-center2 {
+	background-position: -320px -1344px;
+}
+.icon-symbol1-paragraph-right2 {
+	background-position: -384px -1344px;
+}
+.icon-symbol1-paragraph-justify2 {
+	background-position: -448px -1344px;
+}
+.icon-symbol1-indent-increase {
+	background-position: -512px -1344px;
+}
+.icon-symbol1-indent-decrease {
+	background-position: -576px -1344px;
+}
+.icon-symbol1-new-tab {
+	background-position: -640px -1344px;
+}
+.icon-symbol1-embed {
+	background-position: -704px -1344px;
+}
+.icon-symbol1-code {
+	background-position: -768px -1344px;
+}
+.icon-symbol1-console {
+	background-position: -832px -1344px;
+}
+.icon-symbol1-share {
+	background-position: -896px -1344px;
+}
+.icon-symbol1-mail {
+	background-position: -960px -1344px;
+}
+.icon-symbol1-mail2 {
+	background-position: 0 -1408px;
+}
+.icon-symbol1-mail3 {
+	background-position: -64px -1408px;
+}
+.icon-symbol1-mail4 {
+	background-position: -128px -1408px;
+}
+.icon-symbol1-google {
+	background-position: -192px -1408px;
+}
+.icon-symbol1-google-plus {
+	background-position: -256px -1408px;
+}
+.icon-symbol1-google-plus2 {
+	background-position: -320px -1408px;
+}
+.icon-symbol1-google-plus3 {
+	background-position: -384px -1408px;
+}
+.icon-symbol1-google-plus4 {
+	background-position: -448px -1408px;
+}
+.icon-symbol1-google-drive {
+	background-position: -512px -1408px;
+}
+.icon-symbol1-facebook {
+	background-position: -576px -1408px;
+}
+.icon-symbol1-facebook2 {
+	background-position: -640px -1408px;
+}
+.icon-symbol1-facebook3 {
+	background-position: -704px -1408px;
+}
+.icon-symbol1-instagram {
+	background-position: -768px -1408px;
+}
+.icon-symbol1-twitter {
+	background-position: -832px -1408px;
+}
+.icon-symbol1-twitter2 {
+	background-position: -896px -1408px;
+}
+.icon-symbol1-twitter3 {
+	background-position: -960px -1408px;
+}
+.icon-symbol1-feed2 {
+	background-position: 0 -1472px;
+}
+.icon-symbol1-feed3 {
+	background-position: -64px -1472px;
+}
+.icon-symbol1-feed4 {
+	background-position: -128px -1472px;
+}
+.icon-symbol1-youtube {
+	background-position: -192px -1472px;
+}
+.icon-symbol1-youtube2 {
+	background-position: -256px -1472px;
+}
+.icon-symbol1-vimeo {
+	background-position: -320px -1472px;
+	width: 34px;
+	height: 34px;
+}
+.icon-symbol1-vimeo2 {
+	background-position: -384px -1472px;
+}
+.icon-symbol1-vimeo3 {
+	background-position: -448px -1472px;
+}
+.icon-symbol1-lanyrd {
+	background-position: -512px -1472px;
+}
+.icon-symbol1-flickr {
+	background-position: -576px -1472px;
+}
+.icon-symbol1-flickr2 {
+	background-position: -640px -1472px;
+}
+.icon-symbol1-flickr3 {
+	background-position: -704px -1472px;
+}
+.icon-symbol1-flickr4 {
+	background-position: -768px -1472px;
+}
+.icon-symbol1-picassa {
+	background-position: -832px -1472px;
+}
+.icon-symbol1-picassa2 {
+	background-position: -896px -1472px;
+}
+.icon-symbol1-dribbble {
+	background-position: -960px -1472px;
+}
+.icon-symbol1-dribbble2 {
+	background-position: 0 -1536px;
+}
+.icon-symbol1-dribbble3 {
+	background-position: -64px -1536px;
+}
+.icon-symbol1-forrst {
+	background-position: -128px -1536px;
+}
+.icon-symbol1-forrst2 {
+	background-position: -192px -1536px;
+}
+.icon-symbol1-deviantart {
+	background-position: -256px -1536px;
+	width: 33px;
+}
+.icon-symbol1-deviantart2 {
+	background-position: -320px -1536px;
+}
+.icon-symbol1-steam {
+	background-position: -384px -1536px;
+	width: 33px;
+}
+.icon-symbol1-steam2 {
+	background-position: -448px -1536px;
+}
+.icon-symbol1-github {
+	background-position: -512px -1536px;
+}
+.icon-symbol1-github2 {
+	background-position: -576px -1536px;
+}
+.icon-symbol1-github3 {
+	background-position: -640px -1536px;
+}
+.icon-symbol1-github4 {
+	background-position: -704px -1536px;
+}
+.icon-symbol1-github5 {
+	background-position: -768px -1536px;
+}
+.icon-symbol1-wordpress {
+	background-position: -832px -1536px;
+}
+.icon-symbol1-wordpress2 {
+	background-position: -896px -1536px;
+}
+.icon-symbol1-joomla {
+	background-position: -960px -1536px;
+}
+.icon-symbol1-blogger {
+	background-position: 0 -1600px;
+}
+.icon-symbol1-blogger2 {
+	background-position: -64px -1600px;
+}
+.icon-symbol1-tumblr {
+	background-position: -128px -1600px;
+}
+.icon-symbol1-tumblr2 {
+	background-position: -192px -1600px;
+}
+.icon-symbol1-yahoo {
+	background-position: -256px -1600px;
+}
+.icon-symbol1-tux {
+	background-position: -320px -1600px;
+	width: 33px;
+	height: 33px;
+}
+.icon-symbol1-apple {
+	background-position: -384px -1600px;
+}
+.icon-symbol1-finder {
+	background-position: -448px -1600px;
+}
+.icon-symbol1-android {
+	background-position: -512px -1600px;
+}
+.icon-symbol1-windows {
+	background-position: -576px -1600px;
+}
+.icon-symbol1-windows8 {
+	background-position: -640px -1600px;
+}
+.icon-symbol1-soundcloud {
+	background-position: -704px -1600px;
+}
+.icon-symbol1-soundcloud2 {
+	background-position: -768px -1600px;
+}
+.icon-symbol1-skype {
+	background-position: -832px -1600px;
+}
+.icon-symbol1-reddit {
+	background-position: -896px -1600px;
+}
+.icon-symbol1-linkedin {
+	background-position: -960px -1600px;
+}
+.icon-symbol1-lastfm {
+	background-position: 0 -1664px;
+}
+.icon-symbol1-lastfm2 {
+	background-position: -64px -1664px;
+}
+.icon-symbol1-delicious {
+	background-position: -128px -1664px;
+}
+.icon-symbol1-stumbleupon {
+	background-position: -192px -1664px;
+}
+.icon-symbol1-stumbleupon2 {
+	background-position: -256px -1664px;
+}
+.icon-symbol1-stackoverflow {
+	background-position: -320px -1664px;
+}
+.icon-symbol1-pinterest {
+	background-position: -384px -1664px;
+}
+.icon-symbol1-pinterest2 {
+	background-position: -448px -1664px;
+}
+.icon-symbol1-xing {
+	background-position: -512px -1664px;
+}
+.icon-symbol1-xing2 {
+	background-position: -576px -1664px;
+}
+.icon-symbol1-flattr {
+	background-position: -640px -1664px;
+}
+.icon-symbol1-foursquare {
+	background-position: -704px -1664px;
+}
+.icon-symbol1-foursquare2 {
+	background-position: -768px -1664px;
+}
+.icon-symbol1-paypal {
+	background-position: -832px -1664px;
+	width: 33px;
+}
+.icon-symbol1-paypal2 {
+	background-position: -896px -1664px;
+	width: 33px;
+}
+.icon-symbol1-paypal3 {
+	background-position: -960px -1664px;
+	width: 33px;
+}
+.icon-symbol1-yelp {
+	background-position: 0 -1728px;
+}
+.icon-symbol1-libreoffice {
+	background-position: -64px -1728px;
+}
+.icon-symbol1-file-pdf {
+	background-position: -128px -1728px;
+}
+.icon-symbol1-file-openoffice {
+	background-position: -192px -1728px;
+}
+.icon-symbol1-file-word {
+	background-position: -256px -1728px;
+}
+.icon-symbol1-file-excel {
+	background-position: -320px -1728px;
+}
+.icon-symbol1-file-zip {
+	background-position: -384px -1728px;
+}
+.icon-symbol1-file-powerpoint {
+	background-position: -448px -1728px;
+}
+.icon-symbol1-file-xml {
+	background-position: -512px -1728px;
+}
+.icon-symbol1-file-css {
+	background-position: -576px -1728px;
+}
+.icon-symbol1-html5 {
+	background-position: -640px -1728px;
+}
+.icon-symbol1-html52 {
+	background-position: -704px -1728px;
+}
+.icon-symbol1-css3 {
+	background-position: -768px -1728px;
+}
+.icon-symbol1-chrome {
+	background-position: -832px -1728px;
+}
+.icon-symbol1-firefox {
+	background-position: -896px -1728px;
+	width: 33px;
+}
+.icon-symbol1-IE {
+	background-position: -960px -1728px;
+}
+.icon-symbol1-opera {
+	background-position: 0 -1792px;
+}
+.icon-symbol1-safari {
+	background-position: -64px -1792px;
+}
+.icon-symbol1-IcoMoon {
+	background-position: -128px -1792px;
+}
+
+/************************************************************************************************************************************************************/
+/*
+/*                                                                     SPRITE SIMBLE
+/*
+/*************************************************************************************************************************************************************/
+
+[class^="icon-symbol2-"] { display: inline-block; width: 32px; height: 32px; background-repeat: no-repeat; vertical-align: middle; background-image: url(/skin/img/icon/sprite_simble2.svg) !important;}
+
+.icon-symbol2-sunrise {
+	background-position: 0 0;
+}
+.icon-symbol2-sun {
+	background-position: -64px 0;
+}
+.icon-symbol2-moon {
+	background-position: -128px 0;
+}
+.icon-symbol2-sun2 {
+	background-position: -192px 0;
+}
+.icon-symbol2-windy {
+	background-position: -256px 0;
+}
+.icon-symbol2-wind {
+	background-position: -320px 0;
+}
+.icon-symbol2-snowflake {
+	background-position: -384px 0;
+}
+.icon-symbol2-cloudy {
+	background-position: -448px 0;
+}
+.icon-symbol2-cloud {
+	background-position: -512px 0;
+}
+.icon-symbol2-weather {
+	background-position: -576px 0;
+}
+.icon-symbol2-weather2 {
+	background-position: -640px 0;
+}
+.icon-symbol2-weather3 {
+	background-position: -704px 0;
+}
+.icon-symbol2-lines {
+	background-position: -768px 0;
+}
+.icon-symbol2-cloud2 {
+	background-position: -832px 0;
+}
+.icon-symbol2-lightning {
+	background-position: -896px 0;
+}
+.icon-symbol2-lightning2 {
+	background-position: -960px 0;
+}
+.icon-symbol2-rainy {
+	background-position: 0 -64px;
+}
+.icon-symbol2-rainy2 {
+	background-position: -64px -64px;
+}
+.icon-symbol2-windy2 {
+	background-position: -128px -64px;
+}
+.icon-symbol2-windy3 {
+	background-position: -192px -64px;
+}
+.icon-symbol2-snowy {
+	background-position: -256px -64px;
+}
+.icon-symbol2-snowy2 {
+	background-position: -320px -64px;
+}
+.icon-symbol2-snowy3 {
+	background-position: -384px -64px;
+}
+.icon-symbol2-weather4 {
+	background-position: -448px -64px;
+}
+.icon-symbol2-cloudy2 {
+	background-position: -512px -64px;
+}
+.icon-symbol2-cloud3 {
+	background-position: -576px -64px;
+}
+.icon-symbol2-lightning3 {
+	background-position: -640px -64px;
+}
+.icon-symbol2-sun3 {
+	background-position: -704px -64px;
+}
+.icon-symbol2-moon2 {
+	background-position: -768px -64px;
+}
+.icon-symbol2-cloudy3 {
+	background-position: -832px -64px;
+}
+.icon-symbol2-cloud4 {
+	background-position: -896px -64px;
+}
+.icon-symbol2-cloud5 {
+	background-position: -960px -64px;
+}
+.icon-symbol2-lightning4 {
+	background-position: 0 -128px;
+}
+.icon-symbol2-rainy3 {
+	background-position: -64px -128px;
+}
+.icon-symbol2-rainy4 {
+	background-position: -128px -128px;
+}
+.icon-symbol2-windy4 {
+	background-position: -192px -128px;
+}
+.icon-symbol2-windy5 {
+	background-position: -256px -128px;
+}
+.icon-symbol2-snowy4 {
+	background-position: -320px -128px;
+}
+.icon-symbol2-snowy5 {
+	background-position: -384px -128px;
+}
+.icon-symbol2-weather5 {
+	background-position: -448px -128px;
+}
+.icon-symbol2-cloudy4 {
+	background-position: -512px -128px;
+}
+.icon-symbol2-lightning5 {
+	background-position: -576px -128px;
+}
+.icon-symbol2-thermometer {
+	background-position: -640px -128px;
+}
+.icon-symbol2-compass {
+	background-position: -704px -128px;
+}
+.icon-symbol2-none {
+	background-position: -768px -128px;
+}
+.icon-symbol2-Celsius {
+	background-position: -832px -128px;
+}
+.icon-symbol2-Fahrenheit {
+	background-position: -896px -128px;
+}
+.icon-symbol2-download {
+	background-position: -960px -128px;
+}
+.icon-symbol2-chat {
+	background-position: 0 -192px;
+}
+.icon-symbol2-archive {
+	background-position: -64px -192px;
+}
+.icon-symbol2-user {
+	background-position: -128px -192px;
+}
+.icon-symbol2-users {
+	background-position: -192px -192px;
+	width: 40px;
+}
+.icon-symbol2-archive2 {
+	background-position: -256px -192px;
+}
+.icon-symbol2-earth {
+	background-position: -320px -192px;
+}
+.icon-symbol2-location {
+	background-position: -384px -192px;
+}
+.icon-symbol2-contract {
+	background-position: -448px -192px;
+	width: 35px;
+	height: 35px;
+}
+.icon-symbol2-mobile {
+	background-position: -512px -192px;
+}
+.icon-symbol2-screen {
+	background-position: -576px -192px;
+}
+.icon-symbol2-mail {
+	background-position: -640px -192px;
+}
+.icon-symbol2-support {
+	background-position: -704px -192px;
+	width: 35px;
+	height: 35px;
+}
+.icon-symbol2-help {
+	background-position: -768px -192px;
+}
+.icon-symbol2-videos {
+	background-position: -832px -192px;
+}
+.icon-symbol2-pictures {
+	background-position: -896px -192px;
+}
+.icon-symbol2-link {
+	background-position: -960px -192px;
+}
+.icon-symbol2-search {
+	background-position: 0 -256px;
+}
+.icon-symbol2-cog {
+	background-position: -64px -256px;
+}
+.icon-symbol2-trashcan {
+	background-position: -128px -256px;
+}
+.icon-symbol2-pencil {
+	background-position: -192px -256px;
+}
+.icon-symbol2-info {
+	background-position: -256px -256px;
+}
+.icon-symbol2-article {
+	background-position: -320px -256px;
+}
+.icon-symbol2-clock {
+	background-position: -384px -256px;
+}
+.icon-symbol2-photoshop {
+	background-position: -448px -256px;
+}
+.icon-symbol2-illustrator {
+	background-position: -512px -256px;
+}
+.icon-symbol2-star {
+	background-position: -576px -256px;
+	width: 35px;
+	height: 35px;
+}
+.icon-symbol2-heart {
+	background-position: -640px -256px;
+}
+.icon-symbol2-bookmark {
+	background-position: -704px -256px;
+}
+.icon-symbol2-file {
+	background-position: -768px -256px;
+}
+.icon-symbol2-feed {
+	background-position: -832px -256px;
+}
+.icon-symbol2-locked {
+	background-position: -896px -256px;
+}
+.icon-symbol2-unlocked {
+	background-position: -960px -256px;
+}
+.icon-symbol2-refresh {
+	background-position: 0 -320px;
+}
+.icon-symbol2-list {
+	background-position: -64px -320px;
+}
+.icon-symbol2-share {
+	background-position: -128px -320px;
+}
+.icon-symbol2-archive3 {
+	background-position: -192px -320px;
+}
+.icon-symbol2-images {
+	background-position: -256px -320px;
+	width: 44px;
+}
+.icon-symbol2-images2 {
+	background-position: -320px -320px;
+}
+.icon-symbol2-pencil2 {
+	background-position: -384px -320px;
+}
+.icon-symbol2-heart2 {
+	background-position: -448px -320px;
+	width: 34px;
+}
+.icon-symbol2-cloud6 {
+	background-position: -512px -320px;
+}
+.icon-symbol2-star2 {
+	background-position: -576px -320px;
+}
+.icon-symbol2-tv {
+	background-position: -640px -320px;
+	width: 33px;
+}
+.icon-symbol2-sound {
+	background-position: -704px -320px;
+	width: 33px;
+}
+.icon-symbol2-video {
+	background-position: -768px -320px;
+}
+.icon-symbol2-trash {
+	background-position: -832px -320px;
+}
+.icon-symbol2-user2 {
+	background-position: -896px -320px;
+}
+.icon-symbol2-key {
+	background-position: -960px -320px;
+}
+.icon-symbol2-search2 {
+	background-position: 0 -384px;
+}
+.icon-symbol2-settings {
+	background-position: -64px -384px;
+}
+.icon-symbol2-camera {
+	background-position: -128px -384px;
+}
+.icon-symbol2-tag {
+	background-position: -192px -384px;
+}
+.icon-symbol2-lock {
+	background-position: -256px -384px;
+}
+.icon-symbol2-bulb {
+	background-position: -320px -384px;
+}
+.icon-symbol2-pen {
+	background-position: -384px -384px;
+	width: 33px;
+}
+.icon-symbol2-diamond {
+	background-position: -448px -384px;
+}
+.icon-symbol2-display {
+	background-position: -512px -384px;
+}
+.icon-symbol2-location2 {
+	background-position: -576px -384px;
+}
+.icon-symbol2-eye {
+	background-position: -640px -384px;
+}
+.icon-symbol2-bubble {
+	background-position: -704px -384px;
+}
+.icon-symbol2-stack {
+	background-position: -768px -384px;
+}
+.icon-symbol2-cup {
+	background-position: -832px -384px;
+}
+.icon-symbol2-phone {
+	background-position: -896px -384px;
+}
+.icon-symbol2-news {
+	background-position: -960px -384px;
+}
+.icon-symbol2-mail2 {
+	background-position: 0 -448px;
+}
+.icon-symbol2-like {
+	background-position: -64px -448px;
+}
+.icon-symbol2-photo {
+	background-position: -128px -448px;
+}
+.icon-symbol2-note {
+	background-position: -192px -448px;
+}
+.icon-symbol2-clock2 {
+	background-position: -256px -448px;
+}
+.icon-symbol2-paperplane {
+	background-position: -320px -448px;
+}
+.icon-symbol2-params {
+	background-position: -384px -448px;
+}
+.icon-symbol2-banknote {
+	background-position: -448px -448px;
+}
+.icon-symbol2-data {
+	background-position: -512px -448px;
+}
+.icon-symbol2-music {
+	background-position: -576px -448px;
+}
+.icon-symbol2-megaphone {
+	background-position: -640px -448px;
+}
+.icon-symbol2-study {
+	background-position: -704px -448px;
+}
+.icon-symbol2-lab {
+	background-position: -768px -448px;
+}
+.icon-symbol2-food {
+	background-position: -832px -448px;
+}
+.icon-symbol2-t-shirt {
+	background-position: -896px -448px;
+}
+.icon-symbol2-fire {
+	background-position: -960px -448px;
+}
+.icon-symbol2-clip {
+	background-position: 0 -512px;
+	width: 34px;
+}
+.icon-symbol2-shop {
+	background-position: -64px -512px;
+}
+.icon-symbol2-calendar {
+	background-position: -128px -512px;
+}
+.icon-symbol2-wallet {
+	background-position: -192px -512px;
+	width: 33px;
+}
+.icon-symbol2-vynil {
+	background-position: -256px -512px;
+	width: 36px;
+	height: 36px;
+}
+.icon-symbol2-truck {
+	background-position: -320px -512px;
+}
+.icon-symbol2-world {
+	background-position: -384px -512px;
+}
+
+/************************************************************************************************************************************************************/
+/*
+/*                                                                     SPRITE COLOR
+/*
+/*************************************************************************************************************************************************************/
+
+[class^="icon-color-"] { display: inline-block; width: 14px; height: 14px; background-repeat: no-repeat; vertical-align: middle;}
+
+.icon-color-white { background-image: url(/skin/img/icon/sprite_white.png) !important; }
+.icon-color-black { background-image: url(/skin/img/icon/sprite_black.png) !important; }
+.icon-color-black2 { background-image: url(/skin/img/icon/sprite_black.png) !important; }
+.icon-color-gray { background-image: url(/skin/img/icon/sprite_gray.png) !important; }
+.icon-color-gray2 { background-image: url(/skin/img/icon/sprite_gray2.png) !important; }
+.icon-color-blue { background-image: url(/skin/img/icon/sprite_blue.png) !important; }
+.icon-color-green { background-image: url(/skin/img/icon/sprite_green.png) !important; }
+.icon-color-yellow { background-image: url(/skin/img/icon/sprite_yellow.png) !important; }
+.icon-color-red { background-image: url(/skin/img/icon/sprite_red.png) !important; }
+
+.icon-color-music {
+	background-position: 0 0;
+}
+.icon-color-search {
+	background-position: -28px 0;
+}
+.icon-color-envelope {
+	background-position: -56px 0;
+}
+.icon-color-heart {
+	background-position: -84px 0;
+}
+.icon-color-user {
+	background-position: -112px 0;
+}
+.icon-color-ok {
+	background-position: -140px 0;
+}
+.icon-color-remove {
+	background-position: -168px 0;
+}
+.icon-color-off {
+	background-position: -196px 0;
+}
+.icon-color-cog {
+	background-position: -224px 0;
+}
+.icon-color-home {
+	background-position: -252px 0;
+}
+.icon-color-time {
+	background-position: -280px 0;
+}
+.icon-color-play-circle {
+	background-position: -308px 0;
+}
+.icon-color-repeat {
+	background-position: -336px 0;
+}
+.icon-color-refresh {
+	background-position: -364px 0;
+}
+.icon-color-lock {
+	background-position: -392px 0;
+}
+.icon-color-flag {
+	background-position: -420px 0;
+}
+.icon-color-tag {
+	background-position: 0 -28px;
+}
+.icon-color-tags {
+	background-position: -28px -28px;
+	width: 15px;
+}
+.icon-color-book {
+	background-position: -56px -28px;
+}
+.icon-color-bookmark {
+	background-position: -84px -28px;
+}
+.icon-color-camera {
+	background-position: -112px -28px;
+	width: 15px;
+}
+.icon-color-picture {
+	background-position: -140px -28px;
+	width: 15px;
+}
+.icon-color-map-marker {
+	background-position: -168px -28px;
+}
+.icon-color-plus-sign {
+	background-position: -196px -28px;
+}
+.icon-color-minus-sign {
+	background-position: -224px -28px;
+}
+.icon-color-remove-sign {
+	background-position: -252px -28px;
+}
+.icon-color-ok-sign {
+	background-position: -280px -28px;
+}
+.icon-color-question-sign {
+	background-position: -308px -28px;
+}
+.icon-color-info-sign {
+	background-position: -336px -28px;
+}
+.icon-color-remove-circle {
+	background-position: -364px -28px;
+}
+.icon-color-ok-circle {
+	background-position: -392px -28px;
+}
+.icon-color-ban-circle {
+	background-position: -420px -28px;
+}
+.icon-color-asterisk {
+	background-position: 0 -56px;
+}
+.icon-color-exclamation-sign {
+	background-position: -28px -56px;
+}
+.icon-color-fire {
+	background-position: -56px -56px;
+}
+.icon-color-eye-open {
+	background-position: -84px -56px;
+}
+.icon-color-eye-close {
+	background-position: -112px -56px;
+}
+.icon-color-random {
+	background-position: -140px -56px;
+}
+.icon-color-comment {
+	background-position: -168px -56px;
+}
+.icon-color-retweet {
+	background-position: -196px -56px;
+	width: 15px;
+}
+.icon-color-twitter-sign {
+	background-position: -224px -56px;
+}
+.icon-color-facebook-sign {
+	background-position: -252px -56px;
+}
+.icon-color-camera-retro {
+	background-position: -280px -56px;
+}
+.icon-color-cogs {
+	background-position: -308px -56px;
+	width: 15px;
+}
+.icon-color-comments {
+	background-position: -336px -56px;
+}
+.icon-color-thumbs-up {
+	background-position: -364px -56px;
+}
+.icon-color-thumbs-down {
+	background-position: -392px -56px;
+}
+.icon-color-heart-empty {
+	background-position: -420px -56px;
+}
+.icon-color-linkedin-sign {
+	background-position: 0 -84px;
+}
+.icon-color-pushpin {
+	background-position: -28px -84px;
+}
+.icon-color-github-sign {
+	background-position: -56px -84px;
+}
+.icon-color-phone {
+	background-position: -84px -84px;
+}
+.icon-color-bookmark-empty {
+	background-position: -112px -84px;
+}
+.icon-color-phone-sign {
+	background-position: -140px -84px;
+}
+.icon-color-unlock {
+	background-position: -168px -84px;
+}
+.icon-color-bullhorn {
+	background-position: -196px -84px;
+}
+.icon-color-bell {
+	background-position: -224px -84px;
+}
+.icon-color-certificate {
+	background-position: -252px -84px;
+}
+.icon-color-globe {
+	background-position: -280px -84px;
+}
+.icon-color-wrench {
+	background-position: -308px -84px;
+}
+.icon-color-tasks {
+	background-position: -336px -84px;
+}
+.icon-color-briefcase {
+	background-position: -364px -84px;
+}
+.icon-color-group {
+	background-position: -392px -84px;
+	width: 15px;
+}
+.icon-color-link {
+	background-position: -420px -84px;
+}
+.icon-color-cloud {
+	background-position: 0 -112px;
+	width: 15px;
+}
+.icon-color-reorder {
+	background-position: -28px -112px;
+}
+.icon-color-pinterest-sign {
+	background-position: -56px -112px;
+}
+.icon-color-google-plus-sign {
+	background-position: -84px -112px;
+}
+.icon-color-money {
+	background-position: -112px -112px;
+	width: 15px;
+}
+.icon-color-envelope-alt {
+	background-position: -140px -112px;
+}
+.icon-color-comment-alt {
+	background-position: -168px -112px;
+}
+.icon-color-comments-alt {
+	background-position: -196px -112px;
+}
+.icon-color-bolt {
+	background-position: -224px -112px;
+}
+.icon-color-umbrella {
+	background-position: -252px -112px;
+}
+.icon-color-suitcase {
+	background-position: -280px -112px;
+}
+.icon-color-bell-alt {
+	background-position: -308px -112px;
+}
+.icon-color-coffee {
+	background-position: -336px -112px;
+	width: 15px;
+}
+.icon-color-food {
+	background-position: -364px -112px;
+}
+.icon-color-building {
+	background-position: -392px -112px;
+}
+.icon-color-quote-left {
+	background-position: -420px -112px;
+}
+.icon-color-quote-right {
+	background-position: 0 -140px;
+}
+.icon-color-expand-alt {
+	background-position: -28px -140px;
+}
+.icon-color-collapse-alt {
+	background-position: -56px -140px;
+}
+.icon-color-smile {
+	background-position: -84px -140px;
+}
+.icon-color-frown {
+	background-position: -112px -140px;
+}
+.icon-color-meh {
+	background-position: -140px -140px;
+}
+.icon-color-gamepad {
+	background-position: -168px -140px;
+	width: 15px;
+}
+.icon-color-shield {
+	background-position: -196px -140px;
+}
+.icon-color-calendar-empty {
+	background-position: -224px -140px;
+}
+.icon-color-chevron-sign-left {
+	background-position: -252px -140px;
+}
+.icon-color-chevron-sign-right {
+	background-position: -280px -140px;
+}
+.icon-color-chevron-sign-up {
+	background-position: -308px -140px;
+}
+.icon-color-chevron-sign-down {
+	background-position: -336px -140px;
+}
+.icon-color-unlock-alt {
+	background-position: -364px -140px;
+}
+.icon-color-rss-sign {
+	background-position: -392px -140px;
+}
+.icon-color-play-sign {
+	background-position: -420px -140px;
+}
+.icon-color-check-sign {
+	background-position: 0 -168px;
+}
+.icon-color-edit-sign {
+	background-position: -28px -168px;
+}
+.icon-color-dollar {
+	background-position: -56px -168px;
+}
+.icon-color-file {
+	background-position: -84px -168px;
+}
+.icon-color-file-text {
+	background-position: -112px -168px;
+}
+.icon-color-thumbs-up2 {
+	background-position: -140px -168px;
+}
+.icon-color-thumbs-down2 {
+	background-position: -168px -168px;
+}
+.icon-color-youtube {
+	background-position: -196px -168px;
+}
+.icon-color-youtube-play {
+	background-position: -224px -168px;
+}
+.icon-color-instagram {
+	background-position: -252px -168px;
+}
+.icon-color-tumblr-sign {
+	background-position: -280px -168px;
+}
+.icon-color-skype {
+	background-position: -308px -168px;
+}
+.icon-color-female {
+	background-position: -336px -168px;
+}
+.icon-color-male {
+	background-position: -364px -168px;
+}
+.icon-color-sun {
+	background-position: -392px -168px;
+}
+.icon-color-moon {
+	background-position: -420px -168px;
+}

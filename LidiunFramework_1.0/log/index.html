@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Page Not Found</title>
+		
+		<link rel="shortcut icon" href="/img/ico/favicon.ico" type="image/x-icon">
+		<link href="/css/base_1.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body class="background_white">
+		<nav class="fix_top shadow_bottom" style="background: url(/img/menu.png); padding:20px 0px; position: fixed; z-index: 100;"></nav>
+		<header>
+			<div class="container" >
+				<hr class="clear60">
+				<div class="fluid_grid_16">
+					<h2 class="heading1 thin mark mark_large3 other background_blue color_white bold">Page not found</h2>
+				</div>
+				<div class="fluid_grid_16">
+					<hr class="clear20">
+					<span class="heading3 color_black_low">
+						Sorry, this page isn't available<br/>
+						The link you followed may be broken, maintenance or the page may have been removed.
+					</span>
+				</div>
+				<hr class="clear40">
+				<div class="fluid_grid_16 text_center">
+					<img src="/img/bad.jpg" style="width:200px;"/>
+				</div>
+				<hr class="clear60">
+				<div class="fluid_grid_16 text_center">
+					<script>
+						function goBackHome()
+						{
+							var urlLink = "http://www";
+							var url = window.location;
+							url = url.toString();
+							url = url.split(".");
+							
+							var i = 1; 
+							while (i < url.length) {
+								urlLink = urlLink + "." + url[i];
+								i++;
+							}
+							location.href = urlLink;
+						}
+					</script>
+					<div class="box_large shadow_inset color_black_low background_white tex_center border_radius" onClick="goBackHome();" style="cursor: pointer;">
+							<a href="javascript:;" alt="back home" style="font-size: 18px;">Click here to back home...</a>
+						</div>
+				</div>
+			</div>
+			<hr class="clear40">
+		</header>
+
+		<!-- Footer -->
+		<footer class="shadow_top">
+			<div class="fix_footer color_black_low " style="padding:19px 0 30px 0;"></div>
+		</footer>
+	</body>
+</html>

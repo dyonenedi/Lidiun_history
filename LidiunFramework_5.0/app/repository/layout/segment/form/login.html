@@ -1,0 +1,40 @@
+<form id="loginForm">
+	<input type="hidden" name="render" value="login">
+    
+    <div class="input-group input-group-lg">
+	  <span class="input-group-addon">@</span>
+	  <input type="email" name="email[email]" class="form-control" placeholder="Email address" required="" autofocus="" autocomplete="on">
+	</div>
+	<hr class="clear-20">
+
+	<div class="input-group input-group-lg">
+	  <span class="input-group-addon">#..</span>
+	  <input type="password" name="password[password]" class="form-control" placeholder="Password" required="">
+	</div>
+	<hr class="clear-20">
+
+    <div class="checkbox">
+		<label>
+			<input type="checkbox" name="string[remindme]" value=""> <%REMINDME_TR%>
+		</label>
+    </div>
+    <a href="/recover/"><%FRASE_LOGIN_2_TR%></a>
+    <hr class="clear-10">
+    
+    <button type="submit" class="btn btn-sm btn-blue"><%SEND_TR%></button>
+</form>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#loginForm').submit(function(e){
+			var formId = this.id;
+			e.preventDefault();
+			var data = _submit(formId);
+			if (data.reply) {
+				redirect('panel');
+			} else {
+				alertBar(data.message);
+			}
+		});
+	});
+</script>

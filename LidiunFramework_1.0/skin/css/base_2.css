@@ -1,0 +1,776 @@
+/* Font Open Sans */
+@import url(font/open-sans/stylesheet.css);
+
+/* Font Source Sans Pro */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900);
+
+/*========================================================================================================
+
+	MMPATTERN CSS HTML5 ©2013 - Base
+	By Natan Dias
+	Version: 1
+	Creat: Apr/2013
+
+========================================================================================================*/
+
+*{ margin:0; padding:0; outline:0;}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video { border: 0; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block;}
+blockquote, q { quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after { content:'';}
+
+:focus { outline: none;}
+
+/* General styles */
+html { font-family: Arial, sans-serif; font-size:13px; color:#484848}
+body {overflow-y: scroll; overflow-x: hidden;}
+
+a:link,
+a:visited { color:#069; text-decoration:none; outline:none;}
+a:hover   { color:#333; text-decoration:underline;}
+
+
+/* Barra de rolagem WEBKIT */
+::-webkit-scrollbar 			{ height: 11px; overflow: visible; width: 11px;}
+::-webkit-scrollbar-thumb 		{ background-color: rgba(0,0,0,.2); border: solid transparent; border-width: 1px 1px 1px 6px; min-height: 28px; padding: 100px 0 0;}
+::-webkit-scrollbar-thumb:hover { background-color: rgba(0,0,0,.5);}
+::-webkit-scrollbar-track 		{ border: solid transparent; border-width: 0 0 0 4px; background:#CCC;}
+::-webkit-scrollbar-corner 		{ background: transparent;}
+
+hr { border:none; overflow:auto}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Extras
+
+========================================================================================================*/
+.fix_header {
+	position:fixed !important;
+	z-index:9999;
+	background:rgba(255,255,255,0.9);
+	box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+.fix_header:hover { background:rgba(255,255,255,1);}
+.logo { background-color:#069; padding:7px !important;}
+
+
+/* ---- Bloco de publicações ---- */
+.publisher + .publisher, .publisher2 + .publisher2 { margin-top:20px;}
+.publisher2::after { display:block; content:"."; clear:both; visibility:hidden; height:0; overflow:hidden;}
+
+.publisher { position:relative; background:rgb(255,255,255); border-radius:3px; border-right:1px solid rgb(216, 216, 216); border-left:1px solid rgb(216, 216, 216); box-shadow: 0px 3px 0 -1px rgba(0,0,0,0.1);}
+
+.publisher .pic_block { position:absolute; top:5px;}
+
+[class^="fluid_grid_"] .publisher .pic_block { left:-10%; right:auto;}
+[class^="fluid_grid_"] + [class^="fluid_grid_"] .publisher .pic_block { left:auto; right:-10%;}
+
+.publisher_top { color:#777; border-bottom:dashed 1px rgb(219,219,219);}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Background
+
+========================================================================================================*/
+.background { position:relative; top:-1px;}
+.background .background_image { position:absolute; top:0; left:0; width:100%; height:100%; background-repeat:no-repeat; background-position:center center; background-size:cover; z-index:-1;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Bonnes
+
+========================================================================================================*/
+[class^="fix_"] { width:100%; position:relative;}
+.container { width:1020px; margin:0 auto;}
+
+.container::before, [class^="fix_"]::before,
+.container::after, [class^="fix_"]::after { display:block; content:"."; clear:both; visibility:hidden; height:0; overflow:hidden;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - 1020 Grid System
+
+========================================================================================================*/
+[class*="grid"] { display:inline-block; position:relative; float:left; min-height:10px;}
+
+[class^="grid_"] {padding:0 1%;}
+[class^="fluid_grid_"] {margin:0 1%;}
+
+
+/* Grid */
+.grid_1  {width:4.25%; } .grid_2  {width:10.5%; } .grid_3  {width:16.75%;}
+.grid_4  {width:23.0%; } .grid_5  {width:29.25%;} .grid_6  {width:35.5%; }
+.grid_7  {width:41.75%;} .grid_8  {width:48.0%; } .grid_9  {width:54.25%;}
+.grid_10 {width:60.5%; } .grid_11 {width:66.75%;} .grid_12 {width:73.0%; }
+.grid_13 {width:79.25%;} .grid_14 {width:85.5%; } .grid_15 {width:91.75%;}
+.grid_16 {width:98.0%; }
+
+
+/* Fluid Grid*/
+.fluid_grid_1  {width:4.25%; } .fluid_grid_2  {width:10.5%; } .fluid_grid_3  {width:16.75%;}
+.fluid_grid_4  {width:23.0%; } .fluid_grid_5  {width:29.25%;} .fluid_grid_6  {width:35.5%; }
+.fluid_grid_7  {width:41.75%;} .fluid_grid_8  {width:48.0%; } .fluid_grid_9  {width:54.25%;}
+.fluid_grid_10 {width:60.5%; } .fluid_grid_11 {width:66.75%;} .fluid_grid_12 {width:73.0%; }
+.fluid_grid_13 {width:79.25%;} .fluid_grid_14 {width:85.5%; } .fluid_grid_15 {width:91.75%;}
+.fluid_grid_16 {width:98.0%; }
+
+
+/* Span */
+[class*="span_"] [class^="grid_"] { padding:0;}
+[class*="span_"] [class^="fluid_grid_"] { margin:0;}
+.span_1  {width:6.25% 	!important;} .span_2  {width:12.5% 	!important;} .span_3  {width:18.75%	!important;}
+.span_4  {width:25.0% 	!important;} .span_5  {width:31.25%	!important;} .span_6  {width:37.5%	!important;}
+.span_7  {width:43.75% 	!important;} .span_8  {width:50% 	!important;} .span_9  {width:56.25%	!important;}
+.span_10 {width:62.5% 	!important;} .span_11 {width:68.75%	!important;} .span_12 {width:75.0%	!important;}
+.span_13 {width:81.25% 	!important;} .span_14 {width:87.5%	!important;} .span_15 {width:93.75%	!important;}
+.span_16 {width:100% 	!important;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Clear Space
+
+========================================================================================================*/
+.clear_fix {}
+.clear_fix::before, .clear_fix::after { display:block; content:"."; clear:both; visibility:hidden; height:0; overflow:hidden;}
+
+[class|="clear"] { width:100%; clear:both;}
+.clear-05 	{ height:5px;  }
+.clear-10 	{ height:10px; }
+.clear-20 	{ height:20px; }
+.clear-40 	{ height:40px; }
+.clear-60 	{ height:60px; }
+.clear-80 	{ height:80px; }
+.clear-100 	{ height:100px;}
+
+[class|="clear"]::before, [class|="clear"]::after { display:block; content:"."; clear:both; visibility:hidden; height:0; overflow:hidden;} 
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Text
+
+========================================================================================================*/
+h1, h2, h3, h4, h5, h6 { font-weight:normal;}
+
+/* Tamanho dos MasterHead */
+.masterhead1 { font-size:140px !important;} .masterhead2 { font-size:120px !important;}
+.masterhead3 { font-size:90px  !important;} .masterhead4 { font-size:70px  !important;}
+
+/* Tamanho dos Heading */
+.heading1 { font-size:50px !important;} .heading2 { font-size:45px !important;} .heading3 { font-size:40px !important;}
+.heading4 { font-size:35px !important;} .heading5 { font-size:30px !important;} .heading6 { font-size:25px !important;}
+.heading7 { font-size:20px !important;} .heading8 { font-size:15px !important;} .heading9 { font-size:10px !important;}
+.heading10{ font-size:8px  !important;}
+
+/* Fontes de Texto */
+.opensans1 {font-family:"OpenSansBold", 	Arial, sans-serif !important;}
+.opensans2 {font-family:"OpenSansSemibold", Arial, sans-serif !important;}
+.opensans3 {font-family:"OpenSansRegular", 	Arial, sans-serif !important;}
+.opensans4 {font-family:"OpenSansLight",	Arial, sans-serif !important;}
+
+.sourcesans1 {font-family:'Source Sans Pro', Arial, sans-serif !important; font-weight:900;}
+.sourcesans2 {font-family:'Source Sans Pro', Arial, sans-serif !important; font-weight:600;}
+.sourcesans3 {font-family:'Source Sans Pro', Arial, sans-serif !important; font-weight:300;}
+
+
+h1 + p, h2 + p, h3 + p, h3 + p, h5 + p, h6 + p { margin-top:10px;}
+p + p { margin-top:10px;}
+
+/* ------ TOOLS ------ */
+
+/* Decoration */
+.undecoration 	{text-decoration:none !important;}
+.bold 			{ font-weight:bold;}
+.uppercase 		{text-transform:uppercase !important;}
+.line_though	{text-decoration:line-through !important;}
+.underline 		{text-decoration:underline !important;}
+
+
+/* Text-aling */
+.text_left    { text-align:left    !important;}
+.text_center  { text-align:center  !important;}
+.text_right   { text-align:right   !important;}
+.text_justify { text-align:justify !important;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Table
+
+========================================================================================================*/
+table { max-width: 100%; background-color: transparent; border-collapse: collapse; border-spacing: 0;}
+
+.table { width: 100%; margin-bottom: 20px;}
+.table th, .table td { padding: 8px; line-height: 20px; text-align: left; vertical-align: top; border-top: 1px solid #dddddd; }
+.table th { font-weight: bold;}
+.table thead th { vertical-align: bottom;}
+
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td { border-top: 0;}
+
+.table tbody + tbody { border-top: 2px solid #dddddd;}
+
+.table_striped tbody tr:nth-child(2n+1) { background:#FAFAFA;}
+
+.table_bordered { border: solid 1px #dddddd;}
+.table_bordered th ,.table_bordered td { border: solid 1px #dddddd;}
+
+.table_hover tbody tr:hover {background:#FAFAFA;}
+
+.table_condensed th, .table_condensed td { padding:4px 5px;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Galery Display
+
+========================================================================================================*/
+.display_galery { list-style:none; margin:0; padding:0; clear:both;}
+
+.display_item [class*="grid"] { float:none; padding:0 0 0 0.5%; vertical-align:middle;}
+.display_item [class^="fluid_grid_"] { margin:0 0 0 0.5%; padding:0;}
+.display_item { padding:10px 0 10px 0 !important; display:block !important; clear:both;}
+.display_item::before, .display_item::after { display:block; content:"."; overflow:hidden; clear:both; visibility:hidden; height:0; overflow:hidden;}
+.display_item img { max-width:90%; max-height:90%; display:inline-block;}
+
+
+/* .Display_galery  HOVER */
+.display_galery.display_hover .display_item:hover { background-color:rgba(0,0,0,.1);}
+
+/* .Display_galery  DIVIDER */
+.display_galery.display_divider .display_item { border-bottom: solid 1px #DDD;}
+.display_galery.display_divider .display_item:last-child { border-bottom: none;}
+
+/* .Display_galery  DIVIDER-DECORED */
+.display_galery.display_divider_decored .display_item:after { display:block; height:15px; margin-top:20px; visibility:visible; background:url(../img/ico/common-border-shadow-bottom.png) no-repeat top center; background-size:cover;}
+.display_galery.display_divider_decored .display_item:last-child:after {visibility:hidden;}
+
+/* .Display_galery  TABLE */
+.display_galery.display_table { border-radius:5px; border:solid 1px #DDD; background:#FFF; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.display_galery.display_table .display_item { border-bottom: solid 1px #DDD;}
+.display_galery.display_table .display_item:last-child { border-bottom: none;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Tools
+
+========================================================================================================*/
+/* Divider */
+.divider { height:1px; display:block; margin:5px 1px; overflow:hidden; background-color:rgb(227,227,227); border-bottom:solid 1px rgb(255,255,255);}
+.divider_top { height:23px; display:block; overflow:hidden; background:url(../img/ico/common-border-shadow-top.png) no-repeat top center; background-size:cover;}
+.divider_bottom { height:23px; display:block; overflow:hidden; background:url(../img/ico/common-border-shadow-bottom.png) no-repeat top center; background-size:cover;}
+
+/* Positions */
+.center { clear:both; margin:0 auto;}
+.center::before, .center::after { display:block; content:"."; clear:both; visibility:hidden; height:0; overflow:hidden;}
+
+/* Search*/
+.search_container {}
+.search_container input { width:85%; border:none; background:transparent; position:relative;}
+.search_container input:hover,.search_container input:focus { box-shadow:none;}
+.search_container button { width:10%; float:right; cursor:pointer; border:none; padding:8px 0; background:transparent;}
+
+.search_container ul { padding: 0 !important;}
+.search_container ul li { margin:0 0 3px 0 !important;}
+.search_container ul li a { color:#069 !important;}
+
+/* Social Plugins */
+.social_plugin { display:block; clear:both; text-align:right;}
+.social_plugin li { display:inline-block; vertical-align:top;}
+
+/* Aling */
+.aling_center { text-align:center 	  !important;}
+.aling_midlle { vertical-align:middle !important;}
+.aling_top    { vertical-align:top    !important;}
+.aling_bottom { vertical-align:bottom !important;}
+
+.unmargin 	{ margin:0  !important;}
+.unpadding 	{ padding:0 !important;}
+
+/* Mark */
+[class^="mark_"] {border-radius:3px; background:#CCC;}
+.mark_3 {padding:0 4px;} .mark_2  {padding:4px 4px;} .mark_1  {padding:8px 4px;}
+
+/* Cursor */
+.cursor_poiter {cursor:pointer;}
+
+/* Scroll */
+.scroll {overflow-y:auto; overflow-x: hidden;}
+
+/* Icones de Blocos */
+.ico_block { position:absolute; bottom:5%; left:5%; z-index:2; padding:3px 10px; background:rgba(0,0,0,0.7); border-radius:3px; border:solid 1px #FFF;}
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - modalattack (CheckBox and Radio)
+
+========================================================================================================*/
+.modal_mask { position:fixed; top:0; bottom:0; left:0; right:0; background:rgba(0,0,0,0.7); z-index:999999;}
+input[type="checkbox"].modalattack{display:none;}
+
+/* -- For CheckBox -- */
+.modalattack {display:none;}
+input[type="checkbox"].modalattack:checked + .modalattack {display:block;}
+
+/* -- For Radio -- */
+input[type="radio"].modalattack { display:none;}
+input[type="radio"].modalattack:checked + .modalattack {display:block;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Personalização Padrão
+
+========================================================================================================*/
+/* Cores de Textos */
+.color_black   { color:#000 !important;}
+.color_white   { color:#FFF !important;}
+.color_gray    { color:#999 !important;}
+.color_yellow  { color:#FC0 !important;}
+.color_red     { color:#F00 !important;}
+.color_blue    { color:#069 !important;}
+.color_green   { color:#093 !important;}
+
+/* Cores de Fundos */
+.background_white    	{ background:#FFF 		!important;}
+.background_gray    	{ background:#999 		!important;}
+.background_gray_low    { background:#FAFAFA 	!important;}
+.background_yellow  	{ background:#FC0 		!important;}
+.background_yellow_low  { background:#FCF8E3 	!important;}
+.background_red     	{ background:#F00 		!important;}
+.background_red_low   	{ background:#F2DEDE 	!important;}
+.background_blue    	{ background:#09C 		!important;}
+.background_blue_low   	{ background:#D9EDF7 	!important;}
+.background_green   	{ background:#093 		!important;}
+.background_green_low  	{ background:#DFF0D8 	!important;}
+
+/* Border Block*/
+.border_top 	{border-top:solid 1px #CCC; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.border_left 	{border-left:solid 1px #CCC; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.border_right 	{border-right:solid 1px #CCC; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.border_all 	{border: solid 1px #CCC; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.border_bottom	{border-bottom:solid 1px #CCC; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Box
+
+========================================================================================================*/
+[class^=box-] { display:block; overflow:hidden;}
+.box-3 { padding:5px; }
+.box-2 { padding:10px;}
+.box-1 { padding:20px;}
+
+.box_bordered { border:solid 1px #DDD;}
+.box_rounded { border-radius:5px;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Listas
+
+========================================================================================================*/
+ul, ol { display:block; clear:both; margin:0 25px;}
+ul ul, ul ol, ol ul, ol ol { margin-bottom:0;}
+ul li, ol li, ul.unstyled li { padding:3px 0;}
+
+ul li.divider, ol li.divider, ul.unstyled li.divider { padding:0 !important;}
+ul li > i, ol li > i, ul.unstyled li > i { margin-right:10px;}
+
+ul.unstyled, ul.inline { list-style:none; margin:0;}
+ul.unstyled li { display:block;}
+
+/* 	
+	Atenção 
+	
+	Ficar ligado se não irá ocorrer bugs no decorrer do menu inline
+	Caso de bugs. Display:inline-block;
+*/
+
+ul.inline li { display:inline; padding:0 4px;}
+ul.inline li:first-child { padding:0;}
+ul.inline li a { color:inherit;}
+
+/* Tools for List */
+ul.unmargin { margin:0 15px !important;}
+ul.unpadding li { padding:1px 0 !important;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Menu NAV
+	
+========================================================================================================*/
+ul.nav li li { display:block; padding:0;}
+ul.nav li a, .nav li label { display:block; padding:5px 10px; color:#777; border-top: solid 1px transparent; border-bottom: solid 1px transparent; text-decoration:none;}
+ul.nav li a:hover, .nav li label:hover { background:#EEE; color:#333; border-color:#CCC;}
+ul.nav li.active { background:#EEE; color:#333;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Menu_Hidden (NPD All rights reserveds)
+
+========================================================================================================*/
+.menu_hidden { width:100%; height:100%; position:relative; display:inline;}
+.menu_hidden > .menu_block { display:none;}
+.menu_hidden:hover .menu_block { display:block; opacity:1; position:absolute; top:100%; padding:25px 0; width:auto; z-index:999; clear:both;
+	
+	-webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+
+.menu_hidden > .menu_block.left {left:0}
+.menu_hidden > .menu_block.right {right:0;}
+
+.menu_hidden ul.nav { padding: 10px 0; text-align:left;}
+.menu_hidden ul.nav li { display:block; padding:3px 0;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Menu_Fixed (NPD All rights reserveds)
+
+========================================================================================================*/
+.menu_fixed { width:100%; height:100%; position:relative; display:inline;}
+.menu_fixed .menu_block {
+	position:fixed;
+	z-index:999;
+	overflow-x:hidden;
+	overflow-y:auto;
+	top:0;
+	
+	background:rgba(255,255,255,.95);
+	box-shadow:0 0 40px rgba(0,0,0,0.6);
+}
+
+/* ---- Menu Fixo TOP ---- */
+.menu_fixed .menu_block.top {
+	top:0;
+	left:0;
+	width:100%;
+	margin-top:-1000px;
+	-webkit-transition: margin-top 2s cubic-bezier(0,1.12,.39,.98);
+	transition: margin-top 2s cubic-bezier(0,1.12,.39,.98);
+	
+}
+.menu_fixed:hover .menu_block.top {
+	margin-top:0;
+	-webkit-transition: margin-top 2s cubic-bezier(0,1.12,.39,.98);
+	transition: margin-top 2s cubic-bezier(0,1.12,.39,.98);
+}
+
+/* ---- Menu Fixo Left ---- */
+.menu_fixed .menu_block.left {
+	left:0;
+	bottom:0;
+	margin-left:-500px;
+	-webkit-transition: margin-left 1s cubic-bezier(0,1.12,.39,.98);
+	transition: margin-left 1s cubic-bezier(0,1.12,.39,.98);
+}
+.menu_fixed:hover .menu_block.left {
+	margin-left:0;
+	-webkit-transition: margin-left 1s cubic-bezier(0,1.12,.39,.98);
+	transition: margin-left 1s cubic-bezier(0,1.12,.39,.98);
+}
+
+/* ---- Menu Fixo Right ---- */
+.menu_fixed .menu_block.right {
+	right:0;
+	bottom:0;
+	margin-right:-500px;
+	-webkit-transition: margin-right 1s cubic-bezier(0,1.12,.39,.98);
+	transition: margin-right 1s cubic-bezier(0,1.12,.39,.98);
+}
+.menu_fixed:hover .menu_block.right {
+	margin-right:0;
+	-webkit-transition: margin-right 1s cubic-bezier(0,1.12,.39,.98);
+	transition: margin-right 1s cubic-bezier(0,1.12,.39,.98);
+}
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Block mask (NPD All rights reserveds)
+
+========================================================================================================*/
+.blockmask_father { position:relative; display:inline-block; overflow:hidden;}
+.blockmask_father .blockmask_child { display:none}
+.blockmask_father:hover .blockmask_child { display:block; position:absolute; top:0; right:0; left:0; bottom:0; width:100%; height:100%; background:rgba(0,0,0,0.8);}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - ElementHiddenhover (NPD All rights reserveds)
+
+========================================================================================================*/
+.elementHiddenhover {}
+.elementHiddenhover .hidden { visibility:hidden;}
+.elementHiddenhover:hover .hidden { visibility:visible;}
+
+.elementHiddenhover .elementHiddenhover .hidden { visibility:hidden;}
+.elementHiddenhover .elementHiddenhover:hover .hidden { visibility:visible;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Images
+	
+	*** Rever os conceitos desta área ***
+
+========================================================================================================*/
+img { width:auto; height:auto; border:0; max-width:100%; vertical-align:middle;}
+
+.ScaledImage { position:relative; display:inline-block;}
+.ScaledImage .ImageContainer { position:absolute; top:0; left:0; bottom:0; right:0; background-repeat:no-repeat; background-position:center center; background-size:cover;}
+
+
+.ScaledImageContainer { height:inherit; position:relative; overflow:hidden; text-align:center; display:inline-block;}
+.ScaledImageContainer img { max-width:none; height:100%; min-height:100%; position:relative; display:inline-block;}
+.ScaledImageFitWidth { height:auto;}
+
+.image { display:inline-block;}
+.image_product_galery { overflow:hidden; max-height:140px;}
+.image_product_galery img {max-height:140px; min-height:140px;}
+
+.image_fluid { text-align:center; padding:10px; background:#FFF; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.image_fluid img { max-height:300px;}
+
+.img_rounded { border-radius:5px;}
+.img_circle { border-radius:100%;}
+.img_polaroid { padding:5px; background:#FFF; border:solid 1px #CCC; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Animations
+
+========================================================================================================*/
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
+
+/*========================================================================================================
+
+	MMPATTERN CSS ©2013 - Responsive
+
+========================================================================================================*/
+@media (max-width: 1024px) {
+	.container { width:92%;}
+}
+@media (max-width: 780px) {
+	/*.fix_header { display:none;}*/
+}
+@media (max-width: 768px) {
+	.container { width:80%;}
+	.fix_content .container > [class*="grid"] {width:98.0%; position:relative; float:none; min-height:10px;}
+	.fix_content .container > [class*="grid"] + [class*="grid"] { margin-top:20px;}
+	[class^="fluid_grid_"] + [class^="fluid_grid_"] .publisher .pic_block { left:-10%; right:auto;}
+
+}
+@media (max-width: 480px) {
+	body { font-size:11px !important;}
+	input[type="text"][class*="span_"]{ width:auto !important;}
+}
+
+
+
+/*========================================================================================================
+
+	PATTERN CSS ©2013 - ICONS http://glyphicons.com/
+
+========================================================================================================*/
+[class^="icon-"] { width:13px; height:13px; display:inline-block; line-height:14px; background:url(../img/ico/glyphicons-halflings.png);}
+
+
+.icon-white 				{ background:url(../img/ico/glyphicons-halflings-white.png);}
+.icon-gray	 				{ background:url(../img/ico/glyphicons-halflings-gray.png);}
+.icon-blue	 				{ background:url(../img/ico/glyphicons-halflings-blue.png);}
+.icon-red	 				{ background:url(../img/ico/glyphicons-halflings-red.png);}
+.icon-green	 				{ background:url(../img/ico/glyphicons-halflings-green.png);}
+
+
+.icon-glass 				{ background-position: 0 0;}
+.icon-music 				{ background-position: -24px 0;}
+.icon-search 				{ background-position: -48px 0;}
+.icon-envelope 				{ background-position: -72px 0;}
+.icon-heart 				{ background-position: -96px 0;}
+.icon-star 					{ background-position: -120px 0;}
+.icon-star-empty 			{ background-position: -144px 0;}
+.icon-user 					{ background-position: -168px 0;}
+.icon-film 					{ background-position: -192px 0;}
+.icon-th-large 				{ background-position: -216px 0;}
+.icon-th 					{ background-position: -240px 0;}
+.icon-th-list 				{ background-position: -264px 0;}
+.icon-ok 					{ background-position: -288px 0;}
+.icon-remove 				{ background-position: -312px 0;}
+.icon-zoom-in 				{ background-position: -336px 0;}
+.icon-zoom-out 				{ background-position: -360px 0;}
+.icon-off 					{ background-position: -384px 0;}
+.icon-signal 				{ background-position: -408px 0;}
+.icon-cog 					{ background-position: -432px 0;}
+.icon-trash 				{ background-position: -456px 0;}
+.icon-home 					{ background-position: 0 -24px;}
+.icon-file 					{ background-position: -24px -24px;}
+.icon-time 					{ background-position: -48px -24px;}
+.icon-road 					{ background-position: -72px -24px;}
+.icon-download-alt 			{ background-position: -96px -24px;}
+.icon-download 				{ background-position: -120px -24px;}
+.icon-upload 				{ background-position: -144px -24px;}
+.icon-inbox 				{ background-position: -168px -24px;}
+.icon-play-circle 			{ background-position: -192px -24px;}
+.icon-repeat 				{ background-position: -216px -24px;}
+.icon-refresh 				{ background-position: -240px -24px;}
+.icon-list-alt 				{ background-position: -264px -24px;}
+.icon-lock 					{ background-position: -287px -24px;}
+.icon-flag 					{ background-position: -312px -24px;}
+.icon-headphones 			{ background-position: -336px -24px;}
+.icon-volume-off 			{ background-position: -360px -24px;}
+.icon-volume-down 			{ background-position: -384px -24px;}
+.icon-volume-up 			{ background-position: -408px -24px;}
+.icon-qrcode 				{ background-position: -432px -24px;}
+.icon-barcode 				{ background-position: -456px -24px;}
+.icon-tag 					{ background-position: 0 -48px;}
+.icon-tags 					{ background-position: -25px -48px;}
+.icon-book 					{ background-position: -48px -48px;}
+.icon-bookmark 				{ background-position: -72px -48px;}
+.icon-print 				{ background-position: -96px -48px;}
+.icon-camera 				{ background-position: -120px -48px;}
+.icon-font 					{ background-position: -144px -48px;}
+.icon-bold 					{ background-position: -167px -48px;}
+.icon-italic 				{ background-position: -192px -48px;}
+.icon-text-height 			{ background-position: -216px -48px;}
+.icon-text-width 			{ background-position: -240px -48px;}
+.icon-align-left 			{ background-position: -264px -48px;}
+.icon-align-center 			{ background-position: -288px -48px;}
+.icon-align-right 			{ background-position: -312px -48px;}
+.icon-align-justify 		{ background-position: -336px -48px;}
+.icon-list 					{ background-position: -360px -48px;}
+.icon-indent-left 			{ background-position: -384px -48px;}
+.icon-indent-right 			{ background-position: -408px -48px;}
+.icon-facetime-video 		{ background-position: -432px -48px;}
+.icon-picture 				{ background-position: -456px -48px;}
+.icon-pencil 				{ background-position: 0 -72px;}
+.icon-map-marker 			{ background-position: -24px -72px;}
+.icon-adjust 				{ background-position: -48px -72px;}
+.icon-tint 					{ background-position: -72px -72px;}
+.icon-edit 					{ background-position: -96px -72px;}
+.icon-share 				{ background-position: -120px -72px;}
+.icon-check 				{ background-position: -144px -72px;}
+.icon-move 					{ background-position: -168px -72px;}
+.icon-step-backward 		{ background-position: -192px -72px;}
+.icon-fast-backward 		{ background-position: -216px -72px;}
+.icon-backward 				{ background-position: -240px -72px;}
+.icon-play 					{ background-position: -264px -72px;}
+.icon-pause 				{ background-position: -288px -72px;}
+.icon-stop 					{ background-position: -312px -72px;}
+.icon-forward 				{ background-position: -336px -72px;}
+.icon-fast-forward 			{ background-position: -360px -72px;}
+.icon-step-forward 			{ background-position: -384px -72px;}
+.icon-eject 				{ background-position: -408px -72px;}
+.icon-chevron-left 			{ background-position: -432px -72px;}
+.icon-chevron-right 		{ background-position: -456px -72px;}
+.icon-plus-sign 			{ background-position: 0 -96px;}
+.icon-minus-sign 			{ background-position: -24px -96px;}
+.icon-remove-sign 			{ background-position: -48px -96px;}
+.icon-ok-sign 				{ background-position: -72px -96px;}
+.icon-question-sign 		{ background-position: -96px -96px;}
+.icon-info-sign 			{ background-position: -120px -96px;}
+.icon-screenshot 			{ background-position: -144px -96px;}
+.icon-remove-circle 		{ background-position: -168px -96px;}
+.icon-ok-circle 			{ background-position: -192px -96px;}
+.icon-ban-circle 			{ background-position: -216px -96px;}
+.icon-arrow-left 			{ background-position: -240px -96px;}
+.icon-arrow-right 			{ background-position: -264px -96px;}
+.icon-arrow-up 				{ background-position: -289px -96px;}
+.icon-arrow-down 			{ background-position: -312px -96px;}
+.icon-share-alt 			{ background-position: -336px -96px;}
+.icon-resize-full 			{ background-position: -360px -96px;}
+.icon-resize-small 			{ background-position: -384px -96px;}
+.icon-plus 					{ background-position: -408px -96px;}
+.icon-minus 				{ background-position: -433px -96px;}
+.icon-asterisk 				{ background-position: -456px -96px;}
+.icon-exclamation-sign 		{ background-position: 0 -120px;}
+.icon-gift 					{ background-position: -24px -120px;}
+.icon-leaf 					{ background-position: -48px -120px;}
+.icon-fire 					{ background-position: -72px -120px;}
+.icon-eye-open 				{ background-position: -96px -120px;}
+.icon-eye-close 			{ background-position: -120px -120px;}
+.icon-warning-sign 			{ background-position: -144px -120px;}
+.icon-plane 				{ background-position: -168px -120px;}
+.icon-calendar 				{ background-position: -192px -120px;}
+.icon-random 				{ width: 16px; background-position: -216px -120px;}
+.icon-comment 				{ background-position: -240px -120px;}
+.icon-magnet 				{ background-position: -264px -120px;}
+.icon-chevron-up 			{ background-position: -288px -120px;}
+.icon-chevron-down 			{ background-position: -313px -119px;}
+.icon-retweet 				{ background-position: -336px -120px;}
+.icon-shopping-cart 		{ background-position: -360px -120px;}
+.icon-folder-close 			{ background-position: -384px -120px;}
+.icon-folder-open 			{ width: 16px; background-position: -408px -120px;}
+.icon-resize-vertical 		{ background-position: -432px -119px;}
+.icon-resize-horizontal 	{ background-position: -456px -118px;}
+.icon-hdd 					{ background-position: 0 -144px;}
+.icon-bullhorn 				{ background-position: -24px -144px;}
+.icon-bell 					{ background-position: -48px -144px;}
+.icon-certificate 			{ background-position: -72px -144px;}
+.icon-thumbs-up 			{ background-position: -96px -144px;}
+.icon-thumbs-down 			{ background-position: -120px -144px;}
+.icon-hand-right 			{ background-position: -144px -144px;}
+.icon-hand-left 			{ background-position: -168px -144px;}
+.icon-hand-up 				{ background-position: -192px -144px;}
+.icon-hand-down 			{ background-position: -216px -144px;}
+.icon-circle-arrow-right 	{ background-position: -240px -144px;}
+.icon-circle-arrow-left 	{ background-position: -264px -144px;}
+.icon-circle-arrow-up 		{ background-position: -288px -144px;}
+.icon-circle-arrow-down 	{ background-position: -312px -144px;}
+.icon-globe 				{ background-position: -336px -144px;}
+.icon-wrench 				{ background-position: -360px -144px;}
+.icon-tasks 				{ background-position: -384px -144px;}
+.icon-filter 				{ background-position: -408px -144px;}
+.icon-briefcase 			{ background-position: -432px -144px;}
+.icon-fullscreen 			{ background-position: -456px -144px;}

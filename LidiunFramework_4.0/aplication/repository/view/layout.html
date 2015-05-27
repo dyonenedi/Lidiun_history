@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link href="" rel="canonical"/>
+		<link rel="shortcut icon" href="<%FAVICON_PATH%>" type="image/x-icon"/>
+		
+		<title><%SYSTEM_NAME_TAG%> - <%TITLE_TAG%></title>
+		
+		<meta property="og:site_name" content="<%SYSTEM_NAME_TAG%>"/>
+		<meta property="og:title" content="<%SYSTEM_NAME_TAG%> - <%TITLE_TAG%>"/>
+		<meta property="og:locale:alternate" content="<%LANGUAGE_TAG%>"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<meta name="author" content="<%AUTHOR_TAG%>"/>
+		<meta name="description" content="<%DESCRIPTION_TAG%>"/>
+		<meta name="keywords" content="<%KEY_WORDS_TAG%>"/>
+		
+		
+		<link href="<%CSS_BOOTSTRAP_PATH%>" rel="stylesheet" type="text/css"/>
+		<link href="<%CSS_BOOTSTRAP_THEME_PATH%>" rel="stylesheet" type="text/css"/>
+		<link href="<%CSS_MODIFIER_PATH%>" rel="stylesheet" type="text/css"/>
+		<link href="<%CSS_SPRITE_PATH%>" rel="stylesheet" type="text/css"/>
+		<%CSS_ADD_PATH%>
+		
+		<script src="<%JS_JQUERY_PATH%>" type="text/javascript"></script>
+		<script src="<%JS_TOOLS_PATH%>" type="text/javascript"></script>
+	</head>
+
+	<body class="background_white" >
+		<div id="system_html" class="col-sm-12 no_padding">
+			<nav id="system_menu" class="col-sm-12 no_padding">	
+				<%MENU%>
+			</nav>	
+
+			<section id="system_content" class="col-sm-12 no_padding" style="<%BACKGROUND_PATH%>">
+				<%CONTENT%>
+			</section>
+
+			<footer id="system_footer" class="col-sm-12 no_padding">
+				<%FOOTER%>
+			</footer>
+		</div>
+		
+		<div id="system_js">
+			<%JS_ADD_PATH%>
+		</div>
+	</body>
+</html>

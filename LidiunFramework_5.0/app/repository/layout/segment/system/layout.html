@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="" rel="canonical"/>
+		<link rel="shortcut icon" href="<%IMG_ICON_PATH%>favicon.png" type="image/x-icon"/>
+		
+		<title><%APP_NAME_TAG%> - <%TITLE_TAG%></title>
+		
+		<meta property="og:site_name" content="<%APP_NAME_TAG%>"/>
+		<meta property="og:title" content="<%APP_NAME_TAG%> - <%TITLE_TAG%>"/>
+		<meta property="og:locale:alternate" content="<%LANGUAGE_TAG%>"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<meta name="author" content="<%AUTHOR_TAG%>"/>
+		<meta name="description" content="<%DESCRIPTION_TAG%>"/>
+		<meta name="keywords" content="<%KEY_WORD_TAG%>"/>
+		
+		<%COMMON_CSS_PATH%>
+		<%ADDITIONAL_CSS_PATH%>
+
+		<%COMMON_JS_PATH%>
+	</head>
+
+	<body>
+		<div class="grud-1 full-screen">
+			<%MENU%>
+			<%MESSAGE_BAR%>
+			<%CONTENT%>
+			<%FOOTER%>
+		</div>
+		
+		<div>
+			<%ADDITIONAL_JS_PATH%>
+		</div>
+	</body>
+</html>

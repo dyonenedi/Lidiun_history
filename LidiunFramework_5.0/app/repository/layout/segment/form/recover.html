@@ -1,0 +1,39 @@
+<form id="recoverForm">
+	<input type="hidden" name="render" value="recover">
+    
+    <div class="input-group input-group-lg">
+	  <span class="input-group-addon">@</span>
+	  <input type="email" name="email[email]" class="form-control" placeholder="Email address" required="" autofocus="" autocomplete="on" id="email">
+	</div>
+	<hr class="clear-20">
+
+	<div class="input-group input-group-lg">
+	  <span class="input-group-addon">@</span>
+	  <input type="email" class="form-control" placeholder="Email confirmation" required="" autofocus="" autocomplete="on" oninput="check(this)">
+	</div>
+	<hr class="clear-20">
+
+    <button type="submit" class="btn btn-sm btn-blue"><%SEND_TR%></button>
+</form>
+
+
+<script type="text/javascript">
+	function check(input) {
+		if (input.value != document.getElementById('email').value) {
+		   	alertBar('The two email addresses must match.');
+		}
+	}
+
+	$(document).ready(function(){
+		$('#recoverForm').submit(function(e){
+			var formId = this.id;
+			e.preventDefault();
+			var data = _submit(formId);
+			if (data.reply) {
+				successBar(data.message);
+			} else {
+				alertBar(data.message);
+			}
+		});
+	});
+</script>

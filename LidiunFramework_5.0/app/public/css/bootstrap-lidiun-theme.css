@@ -1,0 +1,430 @@
+/* Font shadow */
+.shadow-white {text-shadow: 1px 1px 2px #FFF;}
+.shadow-black { text-shadow: 1px 1px 2px #000;}
+
+/* Font colors */
+.cl-black     { color:#000000 !important;}
+.cl-black-lg  { color:#555555 !important;}
+.cl-gray      { color:#7f8c8d !important;}
+.cl-gray-lg   { color:#AAAAAA !important;}
+.cl-white     { color:#FFFFFF !important;}
+.cl-white-dk  { color:#DDDDDD !important;}
+.cl-yellow    { color:#f39c12 !important;}
+.cl-yellow-lg { color:#f1c40f !important;}
+.cl-orange    { color:#d35400 !important;}
+.cl-orange-lg { color:#e67e22 !important;}
+.cl-red       { color:#c0392b !important;}
+.cl-red-lg    { color:#e74c3c !important;}
+.cl-blue      { color:#066FB5 !important;}
+.cl-blue-lg   { color:#2980b9 !important;}
+.cl-green     { color:#27ae60 !important;}
+.cl-green-lg  { color:#2ecc71 !important;}
+.cl-purple    { color:#9B59B2 !important;}
+.cl-purple-lg { color:#9E7BDA !important;}
+
+/* Background colors */
+.bg-white     { background:#FFFFFF !important;}
+.bg-dark      { background:#34495e !important;}
+.bg-dark-lg   { background:#475E74 !important;}
+.bg-black     { background:#000000 !important;}
+.bg-black-lg  { background:#333333 !important;}
+.bg-gray      { background:#ecf0f1 !important;}
+.bg-gray-lg   { background:#F9F9F9 !important;}
+.bg-yellow    { background:#f1c40f !important;}
+.bg-yellow-lg { background:#FCDF6B !important;}
+.bg-red       { background:#e74c3c !important;}
+.bg-red-lg    { background:#F96E60 !important;}
+.bg-blue      { background:#3498db !important;}
+.bg-blue-lg   { background:#76B4ED !important;}
+.bg-green     { background:#2ecc71 !important;}
+.bg-green-lg  { background:#5ED791 !important;}
+.bg-orange    { background:#e67e22 !important;}
+.bg-orange-lg { background:#EF984A !important;}
+.bg-purple    { background:#9B59B2 !important;}
+.bg-purple-lg { background:#9E7BDA !important;}
+
+/* border colors */
+[class*="-br"] {box-sizing: border-box;}
+.br-dark      { border:1px solid #2c3e50 !important;}
+.br-black   	{ border:1px solid #333 !important;}
+.br-white    	{ border:1px solid #EEE !important;}
+.br-gray    	{ border:1px solid #DDD !important;}
+.br-yellow  	{ border:1px solid #f39c12 !important;}
+.br-red     	{ border:1px solid #c0392b !important;}
+.br-blue    	{ border:1px solid #2980b9 !important;}
+.br-green   	{ border:1px solid #27ae60 !important;}
+.br-orange	  { border:1px solid #d35400 !important;}
+.br-purple    { border:1px solid #8e44ad !important;}
+
+/* Font sizes */
+.fs-0{ font-size: 8px !important;}
+.fs-1{ font-size: 9px !important;}
+.fs-2{ font-size: 10px !important;}
+.fs-3{ font-size: 11px !important;}
+.fs-4{ font-size: 12px !important;}
+.fs-5{ font-size: 14px !important;}
+.fs-6{ font-size: 16px !important;}
+.fs-7{ font-size: 18px !important;}
+.fs-8{ font-size: 20px !important;}
+.fs-9{ font-size: 24px !important;}
+.fs-10{ font-size: 34px !important;}
+.fs-11{ font-size: 44px !important;}
+.fs-12{ font-size: 54px !important;}
+.fs-13{ font-size: 64px !important;}
+.fs-14{ font-size: 74px !important;}
+.fs-15{ font-size: 84px !important;}
+.fs-16{ font-size: 92px !important;}
+.fs-17{ font-size: 100px !important;}
+.fs-18{ font-size: 110px !important;}
+
+/* Button settings */
+
+/* ------------------ BUTTON GRAY ---------------- */
+
+.btn-gray {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active,
+.btn-gray.active,
+.open > .dropdown-toggle.btn-gray {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  background-image: none;
+}
+
+.btn-gray .badge {
+  color: #fff;
+  background-color: #333;
+}
+
+/* ------------------ BUTTON BLUE ---------------- */
+
+.btn-blue {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active,
+.open > .dropdown-toggle.btn-blue {
+  color: #fff;
+  background-color: #3071a9;
+  border-color: #285e8e;
+  background-image: none;
+}
+
+.btn-blue .badge {
+  color: #428bca;
+  background-color: #fff;
+}
+
+/* ------------------ BUTTON GREEN ---------------- */
+
+.btn-green {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active,
+.btn-green.active,
+.open > .dropdown-toggle.btn-green {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+  background-image: none;
+}
+
+.btn-green .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+
+/* ------------------ BUTTON YELLOW ---------------- */
+
+.btn-yellow {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus,
+.btn-yellow:active,
+.btn-yellow.active,
+.open > .dropdown-toggle.btn-yellow {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+  background-image: none;
+}
+
+.btn-yellow .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+
+/* ------------------ BUTTON ORANGE ---------------- */
+
+.btn-orange {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active,
+.btn-orange.active,
+.open > .dropdown-toggle.btn-orange {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+  background-image: none;
+}
+
+.btn-orange .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+
+/* ------------------ BUTTON RED ---------------- */
+
+.btn-red {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active,
+.btn-red.active,
+.open > .dropdown-toggle.btn-red {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+  background-image: none;
+}
+
+.btn-red .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+
+/* Box style */
+.box-white {background: #FFF; border: 1px solid #dedfe1;}
+.box-gray {background: #EEE; border: 1px solid #dedfe1;}
+.box-green {background: #CCFAC6; border: 1px solid #dedfe1;}
+
+/* Alert bar */
+[class*="-bar"]{
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 50px;
+  z-index: 990;
+  text-align: center;
+  font-size: 18px;
+  color: #FFF;
+}
+.alert-bar{
+  background-color: #80ADDA;
+  border-bottom: 1px solid #788AD2;
+}
+.success-bar{
+	background-color: #5ECB89;
+	border-bottom: 1px solid #52CF91;
+}
+.error-bar{
+	background-color: #D27070;
+	border-bottom: 1px solid #B85555;
+}
+
+/* Label style */
+
+.label-blue {
+  background-color: #428bca;
+}
+.label-blue[href]:hover,
+.label-blue[href]:focus {
+  background-color: #3071a9;
+}
+.label-green {
+  background-color: #5cb85c;
+}
+.label-green[href]:hover,
+.label-green[href]:focus {
+  background-color: #449d44;
+}
+.label-blue-lg {
+  background-color: #5bc0de;
+}
+.label-blue-lg[href]:hover,
+.label-blue-lg[href]:focus {
+  background-color: #31b0d5;
+}
+.label-orange {
+  background-color: #f0ad4e;
+}
+.label-orange[href]:hover,
+.label-orange[href]:focus {
+  background-color: #ec971f;
+}
+.label-red {
+  background-color: #d9534f;
+}
+.label-red[href]:hover,
+.label-red[href]:focus {
+  background-color: #c9302c;
+}
+
+/* Panel style */
+
+.panel-blue {
+  border-color: #428bca;
+}
+.panel-blue > .panel-heading {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+.panel-blue > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #428bca;
+}
+.panel-blue > .panel-heading .badge {
+  color: #428bca;
+  background-color: #fff;
+}
+.panel-blue > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #428bca;
+}
+.panel-green {
+  border-color: #d6e9c6;
+}
+.panel-green > .panel-heading {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.panel-green > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #d6e9c6;
+}
+.panel-green > .panel-heading .badge {
+  color: #dff0d8;
+  background-color: #3c763d;
+}
+.panel-green > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #d6e9c6;
+}
+.panel-blue-lg {
+  border-color: #bce8f1;
+}
+.panel-blue-lg > .panel-heading {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.panel-blue-lg > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #bce8f1;
+}
+.panel-blue-lg > .panel-heading .badge {
+  color: #d9edf7;
+  background-color: #31708f;
+}
+.panel-blue-lg > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #bce8f1;
+}
+.panel-orange {
+  border-color: #faebcc;
+}
+.panel-orange > .panel-heading {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.panel-orange > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #faebcc;
+}
+.panel-orange > .panel-heading .badge {
+  color: #fcf8e3;
+  background-color: #8a6d3b;
+}
+.panel-orange > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #faebcc;
+}
+.panel-red {
+  border-color: #ebccd1;
+}
+.panel-red > .panel-heading {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.panel-red > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ebccd1;
+}
+.panel-red > .panel-heading .badge {
+  color: #f2dede;
+  background-color: #a94442;
+}
+.panel-red > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ebccd1;
+}
+
+/* Fonts style */
+
+/*! Importing fonts from google */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Abel|Poiret+One|Lobster|Shadows+Into+Light|Gloria+Hallelujah|Oswald|Roboto+Slab|Indie+Flower|Pacifico|Dancing+Script|PT+Sans+Caption|Hammersmith+One);
+
+/*! Set font class */
+.tl-1 {font-family: 'Open Sans', sans-serif; font-weight: bold;}
+.tx-1 {font-family: 'Open Sans', sans-serif;}
+
+.tl-2 {font-family: 'Abel', sans-serif; font-weight: bold;}
+.tx-2 {font-family: 'Abel', sans-serif;}
+
+.tl-3 {font-family: 'Poiret One', cursive; font-weight: bold;}
+.tx-3 {font-family: 'Poiret One', cursive;}
+
+.tl-4 {font-family: 'Lobster', cursive; font-weight: bold;}
+.tx-4 {font-family: 'Lobster', cursive;}
+
+.tl-5 {font-family: 'Shadows Into Light', cursive; font-weight: bold;}
+.tx-5 {font-family: 'Shadows Into Light', cursive;}
+
+.tl-6 {font-family: 'Gloria Hallelujah', cursive; font-weight: bold;}
+.tx-6 {font-family: 'Gloria Hallelujah', cursive;}
+
+.tl-7 {font-family: 'Oswald', sans-serif; font-weight: bold;}
+.tx-7 {font-family: 'Oswald', sans-serif;}
+
+.tl-8 {font-family: 'Roboto Slab', serif; font-weight: bold;}
+.tx-8 {font-family: 'Roboto Slab', serif;}
+
+.tl-9 {font-family: 'Indie Flower', cursive; font-weight: bold;}
+.tx-9 {font-family: 'Indie Flower', cursive;}
+
+.tl-10 {font-family: 'Pacifico', cursive; font-weight: bold;}
+.tx-10 {font-family: 'Pacifico', cursive;}
+
+.tl-11 {font-family: 'Dancing Script', cursive; font-weight: bold;}
+.tx-11 {font-family: 'Dancing Script', cursive;}
+
+.tl-12 {font-family: 'PT Sans Caption', sans-serif; font-weight: bold;}
+.tx-12 {font-family: 'PT Sans Caption', sans-serif;}
+
+.tl-13 {font-family: 'Hammersmith One', sans-serif; font-weight: bold;}
+.tx-13 {font-family: 'Hammersmith One', sans-serif;}

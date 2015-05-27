@@ -1,0 +1,100 @@
+<h3 id="place" class="tl-1 cl-black-lg no-margin-top"><%TITLE_DOCUMENTATION_4_TR%></h3>
+
+<hr class="divider-05">
+
+<h4 id="layout" class='cl-red bold'>Class Layout</h4>
+<p class="cl-gray">
+	<ul class="no-padding">
+		<li class='cl-purple bold'>Layout::getLayout() <p class='cl-gray no-bold'> Retorna o html com o layout (header, body e content).</p></li>
+		<li class='cl-purple bold'>Layout::getSegment($pathFile) <p class='cl-gray no-bold'> Retorna o html do segment solicitado por parametro. O paramtro recebe o caminho do segment até o arquivo, a partir da pasta segment sem a extenção pois todos os segmentes são obrigatóriamente arquivos HTML</p></li>
+		<li class='cl-purple bold'>Layout::replaceSegment($tag, $content, $segment) <p class='cl-gray no-bold'> Retorna o html do segment substituido a tag pelo conteudo.</p></li>
+		<li class='cl-purple bold'>Layout::replaceLayout($tag, $content) <p class='cl-gray no-bold'> Substitui o conteudo dentro do Layout pela tag passada.</p></li>
+		<li class='cl-purple bold'>Layout::replaceMenu($tag, $content) <p class='cl-gray no-bold'> Substitui o conteudo dentro do Menu pela tag passada.</p></li>
+		<li class='cl-purple bold'>Layout::replaceContent($tag, $content) <p class='cl-gray no-bold'> Substitui o conteudo dentro do Content pela tag passada.</p></li>
+		<li class='cl-purple bold'>Layout::replaceFooter($tag, $content) <p class='cl-gray no-bold'> Substitui o conteudo dentro do Footer pela tag passada.</p></li>
+		<li class='cl-purple bold'>Layout::putContent() <p class='cl-gray no-bold'> Escreve um conteúdo na Variável Content que fica dentro do Layout entre o Menu e o Footer.</p></li>
+		<li class='cl-purple bold'>Layout::haveContent() <p class='cl-gray no-bold'> Returna true se tiver conteudo dentro do Content e false caso não tenha.</p></li>
+		<li class='cl-purple bold'>Layout::renderMenu($boolean) <p class='cl-gray no-bold'> Renderiza o Menu na Render se $boolean for true, não renderiza se for false</p></li>
+		<li class='cl-purple bold'>Layout::renderFooter($boolean) <p class='cl-gray no-bold'> Renderiza o Footer na Render se $boolean for true, não renderiza se for false</p></li>
+		<li class='cl-purple bold'>Layout::addCss($fileName) <p class='cl-gray no-bold'> Adiciona um arquivo Css na Render. (Nome do arquivo sem extensão)</p></li>
+		<li class='cl-purple bold'>Layout::addJs($fileName) <p class='cl-gray no-bold'> Adiciona um arquivo Js na Render. (Nome do arquivo sem extensão)</p></li>
+		<li class='cl-purple bold'>Layout::removeCss($fileName) <p class='cl-gray no-bold'> Remove um arquivo Css da Render. (Nome do arquivo sem extensão)</p></li>
+		<li class='cl-purple bold'>Layout::removeJs($fileName) <p class='cl-gray no-bold'> Remove um arquivo Js da Render. (Nome do arquivo sem extensão)</p></li>
+	</ul>
+
+	<h4 id="request" class='cl-red bold'>Class Request</h4>
+	<p class="cl-gray">
+		<ul class="no-padding">
+			<li class='cl-purple bold'>Request::setParameter($parameter) <p class='cl-gray no-bold'> Coloca um parametro (deve ser array) manualmente dentro dos Parameters do Lidiun</p></li>
+			<li class='cl-purple bold'>Request::unsetParameter($key) <p class='cl-gray no-bold'> Remove um parametro pelo índece.</p></li>
+			<li class='cl-purple bold'>Request::getParameter() <p class='cl-gray no-bold'> Retorna um array com os parametros vindos por $_GET ou $_POST.</p></li>
+			<li class='cl-purple bold'>Request::$_url <p class='cl-gray no-bold'> Contem um array com os dados da URL da requisição atual.</p></li>
+		</ul>
+	</p>
+
+	<h4 id="render" class='cl-red bold'>Class Render</h4>
+	<p class="cl-gray">
+		<ul class="no-padding">
+			<li class='cl-purple bold'>Render::setRender($renderName) <p class='cl-gray no-bold'> Seta uma render manualmente passando o nome da Render por parametro.</p></li>
+			<li class='cl-purple bold'>Render::getAjax() <p class='cl-gray no-bold'> Retorna true se for uma requisição Ajax e false se não for.</p></li>
+			<li class='cl-purple bold'>Render::getEntity() <p class='cl-gray no-bold'> Retorna entidade que será sempre o primeiro parametro da URL quando o segundo for a Render. Exemplo: http://www.lidiun.com/dyonenedi/profile/</p></li>
+			<li class='cl-purple bold'>Render::getRender() <p class='cl-gray no-bold'> Retorna o nome da render atual.</p></li>
+			<li class='cl-purple bold'>Render::setReply($reply) <p class='cl-gray no-bold'> Seta os dados de resposta da requisição gerados pela Render. Esse metodo só deve ser usado nas requisições ajax.</p></li>
+			<li class='cl-purple bold'>Render::setDisplayError($boolean) <p class='cl-gray no-bold'> Se $boolean for true mostrará todos os erro de PHP, se false não os mostrará</p></li>
+			<li class='cl-purple bold'>Render::setDenyIe($boolean) <p class='cl-gray no-bold'> Se $boolean for true bloqueará os usuários de acessarem seu site ou sistema pelo navegado Internet Explore, se false não boqueará</p></li>
+		</ul>
+	</p>
+
+	<h4 id="link" class='cl-red bold'>Class Link</h4>
+	<p class="cl-gray">
+		<ul class="no-padding">
+			<li class='cl-purple bold'>Link::$_link <p class='cl-gray no-bold'> Contem um array com os caminhos, em formato de links, para seus arquivos públicos como imagens ou js e css.</p></li>
+		</ul>
+	</p>
+
+	<h4 id="path" class='cl-red bold'>Class Path</h4>
+	<p class="cl-gray">
+		<ul class="no-padding">
+			<li class='cl-purple bold'>Path::$_path <p class='cl-gray no-bold'> Contem um array com os caminhos, em formato de pastas, para seus arquivos públicos ou não.</p></li>
+		</ul>
+	</p>
+
+	<h4 id="autoload" class='cl-red bold'>Class Autoload</h4>
+	<p class="cl-gray">
+		<ul class="no-padding">
+			<li class='cl-purple bold'>Autoload::includePath($path) <p class='cl-gray no-bold'> Adiciona um caminho para ser procurar classes no autoload. Caminhos devem ser escritos apartir da pasta App. Exemplo: Autoload::includePath('api/lidiun/');</p></li>
+		</ul>
+	</p>
+
+	<h4 id="redirect" class='cl-red bold'>Class Redirect</h4>
+	<p class="cl-gray">
+		<ul class="no-padding">
+			<li class='cl-purple bold'>Redirect::notFound($message) <p class='cl-gray no-bold'> Redireciona para a Render Not_found levando a mensagem como parametro.</p></li>
+			<li class='cl-purple bold'>Redirect::support($message) <p class='cl-gray no-bold'> Redireciona para a Render Support levando a mensagem como parametro.</p></li>
+			<li class='cl-purple bold'>Redirect::supportIe($message) <p class='cl-gray no-bold'> Redireciona para a Render Support_ie levando a mensagem como parametro.</p></li>
+		</ul>
+	</p>
+
+	<h4 id="language" class='cl-red bold'>Class Language</h4>
+	<p class="cl-gray">
+		<ul class="no-padding">
+			<li class='cl-purple bold'>Language::setLanguage($language) <p class='cl-gray no-bold'> Seta um idioma passando-o por parametro. Exemplo: Language::setLanguage('en-us');</p></li>
+			<li class='cl-purple bold'>Language::getLanguage() <p class='cl-gray no-bold'> Retorna a linguagem atual.</p></li>
+			<li class='cl-purple bold'>Language::translation($content) <p class='cl-gray no-bold'> Retorna um conteudo traduzido com base nas Tags de tradução do Lidiun</p></li>
+		</ul>
+	</p>
+
+	<h4 id="database" class='cl-red bold'>Class Database</h4>
+	<p class="cl-gray">
+		<ul class="no-padding">
+			<li class='cl-purple bold'>Database::connect($con) <p class='cl-gray no-bold'> Faz uma conxão com o Banco de Dados. Se $con for null conectará usando as configurações do define_database.php caso seja um array, irá usá-lo para se conectar ao banco de dados. Array deve ter o seguinte padrão: ['host_name' => '', 'db_name' => '', 'user_name' => '', 'password' => '']</p></li>
+			<li class='cl-purple bold'>Database::query($query,$return) <p class='cl-gray no-bold'> Retorna a execução de uma query passada pelo primeiro parametro, em um formato escolhido pelo segundo parametro que pode ser 'boolean', 'object', 'array' ou 'num_rows'.</p></li>
+			<li class='cl-purple bold'>Database::autocommit($boolean) <p class='cl-gray no-bold'> Seta o autocommit do Mysqli para true se passado true no parametro $boolean e false se passado false. O padrão é true. Caso seja setado o autocommit para false, será nececessário fazer o commit ou rollback manualmente via os metodos abaixo.</p></li>
+			<li class='cl-purple bold'>Database::commit() <p class='cl-gray no-bold'> Comita as querys executadas enquanto o autocommit estava false.</p></li>
+			<li class='cl-purple bold'>Database::rollback() <p class='cl-gray no-bold'> Volta as querys executadas enquanto o autocommit estava false.</p></li>
+			<li class='cl-purple bold'>Database::close() <p class='cl-gray no-bold'> Fecha manualmente a conexão com o Banco de Dados. Por padrão o Lidiun faz isso ao entregar a requisição.</p></li>
+			<li class='cl-purple bold'>Database::getInsertId() <p class='cl-gray no-bold'> retorna o último ID inserido pelo mysqli.</p></li>
+			<li class='cl-purple bold'>Database::getErrorMessage() <p class='cl-gray no-bold'> Retorna a mensagem de erro caso tenha ocorrido algúm.</p></li>
+		</ul>
+	</p>
+</p>

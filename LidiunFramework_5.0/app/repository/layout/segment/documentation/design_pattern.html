@@ -1,0 +1,74 @@
+<h3 id="place" class="tl-1 cl-black-lg no-margin-top"><%TITLE_DOCUMENTATION_1_TR%></h3>
+            
+<p class="cl-gray">
+	Esse design pattern é diferente de tudo que você já viu. Ele possibilita a separação do HTML do PHP facilitando muito para os designers e mudando a forma com que você vê o seu código mudando a forma com que você pensa.
+	<br><br>
+	Vamos começar entendendo com o Lidiun trata as requisições. Toda requisição será analizada da seguinte forma: Se ela tiver uma <span class='cl-blue bold'>Render</span> (arquivo PHP que contem a lógica da página requisitada), então será executada. Se essa Render tiver um <span class='cl-blue bold'>Layout</span> (Arquivo HTML com o layout da página requisitada) o mesmo será renderizado e apresentado. Se não, a Render pode atravéz de metodos státicos nativos do Lidiun renderizar algum conteúdo escrito na própria render. Caso Não haja Render para renderizar a requisição, o Lidiun tentará achar o Layout e renderiza-lo pura e simplesmente, sem lógica alguma. E por fim se o Lidiun não encontrar nem Render nem Layout, ele tentará renderizar a página não encontrada que coso tenha sido excuida pelo desenvolverdor, será substituida pela frase em tags h1 na tela branca do navegador.
+	<br><br>
+	Após encontrar a Render o Lidiun verificará se é uma requisição normal ou Ajax do tipo Web ou Mobile para preparar o retorno dos dados. Em seguida, se holver a <span class='cl-blue bold'>Global_render</span> (Render nativa do Lidiun mas não obrigatória), ele a executará antes de executar a Render solicitada. O Objetivo da Global Render é que você possa ter um lugar para por códigos que deseja executar anter de todas as renders do seu sistema.
+	<br><br>
+	Agora que a requisição já passou por boa parde do Framework checgou a hora de passar pela render onde estará toda a lógica inclundo execução de querys, uso de plugins do Lidiun e APIs externas. É aqui que onde está a maior diferença desse Design Pattern para os outros. Vamos supor que você queira conectar-se a base de dados, executar uma querys e mosrtar esses dados em uma lista utilizando um código HTML estilizado pelo lidiun-bootstrap.css: Você pode usar a classe estática nativa do Lidiun <span class='cl-red bold'>Database</span> que se conectará automaticamente com o banco de dados, assim que você solicitar o retorno de uma query, usando as configurações do define_database.php. Já com o retorno em formato array ou ojeto você poderá chamar seu <span class='cl-red bold'>Segment</span> (Segmento de um bloco html) de listagem para dentro de uma variável com o metodo da class nativa do Lidiun: <span class='cl-red bold'>Layout::getSegment('html')</span>. Agora com o HTML dentro da variável podemos colocar os dados vindos do resultado da query executada acima dentro do html. Pra isso é necessário trabalhar com as chamadas TAGs. Dentro do HTML, em todo lugar que você quiser um dado controlado dinamicamente pelo PHP você usará TAGs com o padrão <span class='cl-red bold'><%%></span> onde dentro delas ficará em caixa alta separadas por underline as palavras que representam aquele dado.
+	<br><br>
+	 
+	<blockquote>
+		<p class="cl-orange fs-5">
+			Exemplo: Veja no código abaixo uma render que faz exatamente o que foi descrito no exemplo acima.
+		</p>
+	</blockquote>
+<pre>
+<code>
+&lt;?php
+/**********************************************************
+* Lidiun PHP Framework 4.0 - (http://www.lidiun.com)
+*
+* @Created 26/08/2013
+* @Author  Dyon Enedi &lt;dyonenedi@hotmail.com&gt;
+* @Modify 24/11/2014
+* @By Dyon Enedi &lt;dyonenedi@hotmail.com&gt;
+* @Contributor Rodolfo Bulati &lt;rbulati@gmail.com&gt;
+* @License: http://www.lidiun.com/license/
+*
+**********************************************************/
+
+use Lidiun\Layout;
+
+use App\Plugin\Dyonenedi\Building;
+use App\Plugin\Dyonenedi\Encrypt;
+
+class Login
+{
+	public function __construct() {
+		$email = 'dyonenedi@gmail.com';
+		$password = Encrypt::encodePassword('12341234');
+
+		$result = Building::select('B.name')
+			->from('login','A')
+			->with('user','B')
+			->where(['A.email' => $email, 'A.password' => $password, 'A.active' => 1])
+		->run('object');
+
+		if ($result) {
+			Layout::replaceContent('name_user', $result->name);
+		} else {
+			Layout::replaceContent('name_user', '');
+		}
+	}
+}
+</code>
+</pre>
+	<blockquote>
+		<p class="cl-orange fs-5">
+			Exemplo: Veja no código abaixo o layout usado na render acima.
+		</p>
+	</blockquote>
+<pre>
+<code class='cl-yellow'>
+&lt;div class="container full-screen"&gt;
+	&lt;div class="grud-1 box-top"&gt;
+		&lt;h3&gt;&lt;%FRASE_1_TR%&gt;&lt;/h3&gt;
+		&lt;p&gt;&lt;%USER_NAME%&gt;&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+</p>

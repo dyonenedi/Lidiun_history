@@ -1,0 +1,294 @@
+/*========================================================================================================
+
+	MMPATTERN CSS HTML5 ©2013 - Base-form
+	By Natan Dias - http://www.natandias.com
+	Version: 1
+	Creat: Apr/2013
+
+========================================================================================================*/
+
+/*========================================================================================================
+
+	PATTERN CSS ©2013 - Formulários
+
+========================================================================================================*/
+input::-moz-placeholder, textarea::-moz-placeholder { color:#333;}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder { color:#333;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color:#999;}
+button::-moz-focus-inner,input::-moz-focus-inner { padding: 0; border: 0;}
+
+button, input, select, textarea { font-family: Arial, sans-serif;}
+
+input, textarea, select {
+	border: 1px solid #DCDCDC;
+	border-top-color:#CCC;
+	border-radius:2px;
+	   
+	width:100%;
+	padding:8px 8px;
+	font-size:13px;
+	color:#999;
+	box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+input:hover, textarea:hover { border-color:#CCC; color:#333; box-shadow: inset 0 1px 5px rgba(0,0,0,0.08);}
+input:focus, textarea:focus{ color:#333; box-shadow: inset 0 1px 5px rgba(0,0,0,0.15);}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+	border-color:rgb(0,103,151);
+}
+input:disabled, input:disabled:hover, input:disabled:focus { background:#F6F6F6; color:#333;} 
+
+select { 
+	border: 1px solid #DDD;
+	border-radius: 2px;
+	color: #444444;
+	font-size: 13px;
+	padding:7px 8px;
+	-webkit-appearance: none;
+	box-shadow: inset 0 1px rgba(255,255,255,0.5), inset 0 -1px rgba(0,0,0,0.2), inset 0 -15px 10px rgba(0,0,0,0.1);
+	
+	background: rgb(247,247,247);
+	background: -moz-linear-gradient(top,  rgb(247,247,247) 0%, rgb(225,225,225) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(247,247,247)), color-stop(100%,rgb(225,225,225)));
+	background: -webkit-linear-gradient(top,  rgb(247,247,247) 0%,rgb(225,225,225) 100%);
+	background: -o-linear-gradient(top,  rgb(247,247,247) 0%,rgb(225,225,225) 100%);
+	background: -ms-linear-gradient(top,  rgb(247,247,247) 0%,rgb(225,225,225) 100%);
+	background: linear-gradient(to bottom,  rgb(247,247,247) 0%,rgb(225,225,225) 100%);
+}
+select:hover { border-color:#CCC; color:#333; box-shadow: inset 0 1px rgba(255,255,255,0.5), inset 0 -1px rgba(0,0,0,0.2), inset 0 -15px 10px rgba(0,0,0,0.2);}
+select:focus { color:#333; box-shadow: inset 0 1px rgba(255,255,255,0.5), inset 0 -1px rgba(0,0,0,0.2), inset 0 -15px 10px rgba(0,0,0,0.2);}
+
+input[type=checkbox], input[type=radio] { display:inline-block; width:auto !important; margin-right:5px; padding:0; border:none;}
+input[type=checkbox] + label, input[type=radio] + label { display:inline; margin:0;}
+
+textarea {
+	height:50px;
+	transition: height 1s;
+	-webkit-transition: height 1s;
+}
+textarea:focus { 
+	height:80px;
+	transition: height 1s;
+	-webkit-transition: height 1s;
+}
+
+label { font-size:13px; display:block; margin-bottom:5px; color:#444444;}
+label.unform {display:inline; margin-bottom:0;}
+
+.action { display:block; clear:both;}
+
+
+/* ----  Help Block - Todas estas funções devem ser executadas dentro de um HelpBlock ---- */
+.help_block { display:block; font-size:12px; margin-bottom:10px; color:#999; clear:both;}
+.help_block.error::before, .help_block.correct::before, .help_block.info::before {margin-right:5px; display:inline-block; width:14px; height:14px; vertical-align:top;}
+
+.help_block.error { color:#F00;}
+.help_block.error::before { content:""; background:url(../img/ico/glyphicons-halflings.png); background-position: -312px 0;}
+
+.help_block.correct { color:#093;}
+.help_block.correct::before { content:""; background:url(../img/ico/glyphicons-halflings.png); background-position: -288px 0;}
+
+.help_block.info { color:#09C;}
+.help_block.info::before { content:""; background:url(../img/ico/glyphicons-halflings.png); background-position: -96px -96px;}
+/* ----  Help Block - Todas estas funções devem ser executadas dentro de um HelpBlock ---- */
+
+
+/* ---- BaseForm ---- */
+.baseform input, .baseform select, .baseform textarea, .baseform ul { margin-bottom:5px;}
+
+/* ----  Image Selector ---- */
+.photo_selector { position:relative; display:block;}
+.image_selector { position:absolute; top:0; left:0; z-index:10; height:100%; width:100%; overflow:hidden; cursor:pointer;}
+.image_selector .file_input { position:absolute; top:0; right:0; z-index:10; height:100%; width:100%; font-size:50px; overflow:hidden; cursor:pointer !important; opacity:0;}
+
+
+
+/*========================================================================================================
+
+	PATTERN CSS ©2013 - Botões
+
+========================================================================================================*/
+/* Tamanho dos Botões */
+.btn_auto { width:100% !important; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
+
+/* Grandes */
+.btn_large1 { padding:15px 35px !important; font-size:24px !important;}
+.btn_large2 { padding:10px 20px !important; font-size:20px !important;}
+.btn_large3 { padding:10px 20px !important; font-size:16px !important;}
+
+/* Pequenos */
+.btn_small1 { padding:5px 10px !important;}
+.btn_small2 { padding:3px !important; font-size:12px !important;}
+
+/* Grupo de Botões */
+.btn_group { display:inline-block;}
+.btn_group > .btn { display:inline; border-radius:0px;}
+.btn_group > .btn:nth-child(1n+2){ margin-left:-3px;}
+.btn_group > .btn:first-child {border-radius:3px 0 0 3px;}
+.btn_group > .btn:last-child { border-radius:0 3px 3px 0;}
+
+.btn {
+	width:auto;
+	display:inline-block !important;
+	color:rgb(153,153,153) !important;
+	text-decoration:none !important;
+   	padding:8px 20px;
+	margin-bottom:0;
+	font-size:13px;
+	text-align:center;
+	border-radius:2px;
+	cursor:pointer;
+	border:solid 1px rgb(214,214,214);
+
+	background: rgb(248,248,248);
+	background: -moz-linear-gradient(top,  rgb(248,248,248) 0%, rgb(237,237,237) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(248,248,248)), color-stop(100%,rgb(237,237,237)));
+	background: -webkit-linear-gradient(top,  rgb(248,248,248) 0%,rgb(237,237,237) 100%);
+	background: -o-linear-gradient(top,  rgb(248,248,248) 0%,rgb(237,237,237) 100%);
+	background: -ms-linear-gradient(top,  rgb(248,248,248) 0%,rgb(237,237,237) 100%);
+	background: linear-gradient(to bottom,  rgb(248,248,248) 0%,rgb(237,237,237) 100%);
+}
+
+.btn:hover {
+	border:solid 1px rgb(187,187,187);
+	box-shadow:none;
+
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgb(255,255,255) 0%, rgb(236,236,236) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(255,255,255)), color-stop(100%,rgb(236,236,236)));
+	background: -webkit-linear-gradient(top,  rgb(255,255,255) 0%,rgb(236,236,236) 100%);
+	background: -o-linear-gradient(top,  rgb(255,255,255) 0%,rgb(236,236,236) 100%);
+	background: -ms-linear-gradient(top,  rgb(255,255,255) 0%,rgb(236,236,236) 100%);
+	background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(236,236,236) 100%);
+}
+.btn:active, .btn:focus{
+	box-shadow: inset 0 5px 15px -8px rgba(0,0,0,0.3);
+}
+
+/* Cores dos botões */
+.btn_white {
+	color:rgb(103,103,103) !important;
+	
+	background: rgb(255,255,255);
+}
+.btn_white:hover, .btn_white:focus {
+	background: rgb(255,255,255);
+}
+
+.btn_blue {
+	border:solid 1px rgb(0,80,120);
+	color:#FFF !important;
+	
+	background: rgb(0,115,168);
+	background: -moz-linear-gradient(top,  rgb(0,115,168) 0%, rgb(0,70,140) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(0,115,168)), color-stop(100%,rgb(0,70,140)));
+	background: -webkit-linear-gradient(top,  rgb(0,115,168) 0%,rgb(0,70,140) 100%);
+	background: -o-linear-gradient(top,  rgb(0,115,168) 0%,rgb(0,70,140) 100%);
+	background: -ms-linear-gradient(top,  rgb(0,115,168) 0%,rgb(0,70,140) 100%);
+	background: linear-gradient(to bottom,  rgb(0,115,168) 0%,rgb(0,70,140) 100%);
+}
+.btn_blue:hover, .btn_blue:focus {
+	border:solid 1px rgb(0,61,91);
+	box-shadow: inset 0 -5px 15px -8px rgba(0,0,0,0.1);
+	
+	background: rgb(0,115,168);
+	background: -moz-linear-gradient(top,  rgb(0,115,168) 0%, rgb(0,70,140) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(0,115,168)), color-stop(100%,rgb(0,70,140)));
+	background: -webkit-linear-gradient(top,  rgb(0,115,168) 0%,rgb(0,70,140) 100%);
+	background: -o-linear-gradient(top,  rgb(0,115,168) 0%,rgb(0,70,140) 100%);
+	background: -ms-linear-gradient(top,  rgb(0,115,168) 0%,rgb(0,70,140) 100%);
+	background: linear-gradient(to bottom,  rgb(0,115,168) 0%,rgb(0,70,140) 100%);
+}
+
+.btn_red {
+	border:solid 1px rgb(188,20,3);
+	color:#FFF !important;
+
+	background: rgb(252,46,0);
+	background: -moz-linear-gradient(top,  rgb(252,46,0) 0%, rgb(186,19,4) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(252,46,0)), color-stop(100%,rgb(186,19,4)));
+	background: -webkit-linear-gradient(top,  rgb(252,46,0) 0%,rgb(186,19,4) 100%);
+	background: -o-linear-gradient(top,  rgb(252,46,0) 0%,rgb(186,19,4) 100%);
+	background: -ms-linear-gradient(top,  rgb(252,46,0) 0%,rgb(186,19,4) 100%);
+	background: linear-gradient(to bottom,  rgb(252,46,0) 0%,rgb(186,19,4) 100%);
+}
+.btn_red:hover, .btn_red:focus {
+	border:solid 1px rgb(150,17,4);
+	box-shadow: inset 0 -5px 15px -8px rgba(0,0,0,0.1);
+
+	background: rgb(252,46,0);
+	background: -moz-linear-gradient(top,  rgb(252,46,0) 0%, rgb(186,19,4) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(252,46,0)), color-stop(100%,rgb(186,19,4)));
+	background: -webkit-linear-gradient(top,  rgb(252,46,0) 0%,rgb(186,19,4) 100%);
+	background: -o-linear-gradient(top,  rgb(252,46,0) 0%,rgb(186,19,4) 100%);
+	background: -ms-linear-gradient(top,  rgb(252,46,0) 0%,rgb(186,19,4) 100%);
+	background: linear-gradient(to bottom,  rgb(252,46,0) 0%,rgb(186,19,4) 100%);
+}
+
+.btn_black {
+	color:#FFF !important;
+	
+	background: rgb(108,108,108);
+	background: -moz-linear-gradient(top,  rgb(108,108,108) 0%, rgb(66,66,66) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(108,108,108)), color-stop(100%,rgb(66,66,66)));
+	background: -webkit-linear-gradient(top,  rgb(108,108,108) 0%,rgb(66,66,66) 100%);
+	background: -o-linear-gradient(top,  rgb(108,108,108) 0%,rgb(66,66,66) 100%);
+	background: -ms-linear-gradient(top,  rgb(108,108,108) 0%,rgb(66,66,66) 100%);
+	background: linear-gradient(to bottom,  rgb(108,108,108) 0%,rgb(66,66,66) 100%);
+}
+.btn_black:hover, .btn_black:focus {
+	background: #353535;
+	background: -moz-linear-gradient(top,  #353535 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#353535), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top,  #353535 0%,#000000 100%);
+	background: -o-linear-gradient(top,  #353535 0%,#000000 100%);
+	background: -ms-linear-gradient(top,  #353535 0%,#000000 100%);
+	background: linear-gradient(to bottom,  #353535 0%,#000000 100%);
+}
+
+.btn_green {
+	border:solid 1px rgb(37,150,38);
+	color:#FFF !important;
+	
+	background: rgb(44,196,59);
+	background: -moz-linear-gradient(top,  rgb(44,196,59) 0%, rgb(36,146,36) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(44,196,59)), color-stop(100%,rgb(36,146,36)));
+	background: -webkit-linear-gradient(top,  rgb(44,196,59) 0%,rgb(36,146,36) 100%);
+	background: -o-linear-gradient(top,  rgb(44,196,59) 0%,rgb(36,146,36) 100%);
+	background: -ms-linear-gradient(top,  rgb(44,196,59) 0%,rgb(36,146,36) 100%);
+	background: linear-gradient(to bottom,  rgb(44,196,59) 0%,rgb(36,146,36) 100%);
+}
+.btn_green:hover, .btn_green:focus {
+	border:solid 1px rgb(30,131,31);
+	box-shadow: inset 0 -5px 15px -8px rgba(0,0,0,0.1);
+
+	background: rgb(44,196,59);
+	background: -moz-linear-gradient(top,  rgb(44,196,59) 0%, rgb(36,146,36) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(44,196,59)), color-stop(100%,rgb(36,146,36)));
+	background: -webkit-linear-gradient(top,  rgb(44,196,59) 0%,rgb(36,146,36) 100%);
+	background: -o-linear-gradient(top,  rgb(44,196,59) 0%,rgb(36,146,36) 100%);
+	background: -ms-linear-gradient(top,  rgb(44,196,59) 0%,rgb(36,146,36) 100%);
+	background: linear-gradient(to bottom,  rgb(44,196,59) 0%,rgb(36,146,36) 100%);
+}
+
+.btn_orange {
+	color:#FFF !important;
+	
+	background: rgb(255,190,25);
+	background: -moz-linear-gradient(top,  rgb(255,190,25) 0%, rgb(208,130,4) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(255,190,25)), color-stop(100%,rgb(208,130,4)));
+	background: -webkit-linear-gradient(top,  rgb(255,190,25) 0%,rgb(208,130,4) 100%);
+	background: -o-linear-gradient(top,  rgb(255,190,25) 0%,rgb(208,130,4) 100%);
+	background: -ms-linear-gradient(top,  rgb(255,190,25) 0%,rgb(208,130,4) 100%);
+	background: linear-gradient(to bottom,  rgb(255,190,25) 0%,rgb(208,130,4) 100%);
+}
+.btn_orange:hover, .btn_orange:focus {
+	background: rgb(255,147,5);
+	background: -moz-linear-gradient(top,  rgb(255,147,5) 0%, rgb(194,93,4) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(255,147,5)), color-stop(100%,rgb(194,93,4)));
+	background: -webkit-linear-gradient(top,  rgb(255,147,5) 0%,rgb(194,93,4) 100%);
+	background: -o-linear-gradient(top,  rgb(255,147,5) 0%,rgb(194,93,4) 100%);
+	background: -ms-linear-gradient(top,  rgb(255,147,5) 0%,rgb(194,93,4) 100%);
+	background: linear-gradient(to bottom,  rgb(255,147,5) 0%,rgb(194,93,4) 100%);
+}
+
+

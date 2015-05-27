@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="" rel="canonical" />
+		<link rel="shortcut icon" href="<%FAVICON_TAG%>" type="image/x-icon">
+		
+		<title><%SYSTEM_NAME_TAG%> - <%TITLE%></title>
+		
+		<meta property="og:site_name" content="<%SYSTEM_NAME_TAG%>" />
+		<meta property="og:title" content="<%SYSTEM_NAME_TAG%> - <%TITLE%>" />
+		<meta property="og:locale:alternate" content="pt_BR" />
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content=""/>
+		
+		<link href="<%CSS_DEFAULT_TAG%>" rel="stylesheet" type="text/css" />
+		<link href="<%CSS_DEFAULT_FORM_TAG%>" rel="stylesheet" type="text/css" />
+		<link href="<%CSS_DEFAULT_SPRITE_TAG%>" rel="stylesheet" type="text/css" />
+		<%CSS_ADD_TAG%>
+		
+		<script src="<%JS_DEFAULT_TAG%>" type="text/javascript" ></script>
+		<script src="<%JS_HELPER_TAG%>" type="text/javascript" ></script>
+	</head>
+
+	<body class="background_black">
+		<div class="html_content">
+			<!-- Strart Background -->
+			<div class="background_image" style="background: url(<%BACKGROUND_TAG%>); background-size: cover;opacity: 0.7; background-position: top center; opacity: .9;}"></div>
+			<!-- End Background -->
+
+			<!-- Start Menu -->
+			<nav class="nav">	
+				<%MENU%>
+			</nav>	
+			<!-- End Menu -->
+
+			<!-- Start Content -->
+			<section id="content" class="min_height">
+				<%CONTENT%>
+			</section>
+			<!-- End Content -->
+			
+			<!-- Start Footer -->
+			<footer class="footter">
+				<%FOOTER%>
+			</footer>
+			<!-- End Footer -->
+		</div>
+		
+		<div class="js_content">
+			<!-- Start Script -->
+			<%JS_ADD_TAG%>
+			<!-- End Script -->
+		</div>
+	</body>
+</html>

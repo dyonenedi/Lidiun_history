@@ -1,0 +1,54 @@
+<form id="upAppForm">
+	<input type="hidden" name="render" value="signin">
+    
+    <div class="input-group input-group-lg">
+		<span class="input-group-addon">N</span>
+		<input type="text" name="name[first_name]" class="form-control" placeholder="App name" required="" autofocus="">
+	</div>
+	<hr class="clear-20">
+
+	<div class="input-group input-group-lg">
+		<span class="input-group-addon">L</span>
+		<input type="text" name="name[last_name]" class="form-control" placeholder="App link" required="">
+	</div>
+	<hr class="clear-20">
+
+    <div class="input-group input-group-lg">
+		<span class="input-group-addon">D</span>
+		<input type="text" name="email[email]" class="form-control" placeholder="Description" required="">
+	</div>
+	<hr class="clear-20">
+	
+	<div class="input-group input-group-lg">
+		<span class="input-group-addon">D</span>
+		<input type="text" name="password[password]" class="form-control" placeholder="Documentation" required="">
+	</div>
+	<hr class="clear-20">
+	
+	<div class="checkbox">
+		<%TYPE_TR%>
+		<br>
+		<input type="radio" class="form-control" name="type" value="1" checked>Auth
+		<br>
+		<input type="radio" class="form-control" name="type" value="2">Mail
+    </div>
+    <hr class="clear-10">
+
+    <button type="submit" class="btn btn-sm btn-blue"><%SEND_TR%></button>
+</form>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#upAppForm').submit(function(e){
+			var formId = this.id;
+			e.preventDefault();
+			var data = _submit(formId);
+			if (data.reply) {
+				successBar(data.message);
+			} else {
+				alertBar(data.message);
+			}
+		});
+	});
+</script>

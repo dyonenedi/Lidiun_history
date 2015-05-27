@@ -1,0 +1,32 @@
+/**********************************************************
+* Global Layout css
+*
+* @Created 08/08/2014
+* @Author  Dyon Enedi <dyonenedi@hotmail.com>
+* @License: http://www.lidiun.com/license/
+*
+**********************************************************/
+
+code {color: rgb(143, 66, 173)!important; font-family: monospace!important; font-weight: bold;}
+
+.shine {
+	background: #FFEB00 !important;
+	color: #fff !important;
+	padding: 2px 4px;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+.arrow-bottom {
+	vertical-align: bottom;
+	z-index: 10;
+	cursor: pointer;
+	border-color: #777 transparent;
+	border-style: solid;
+	border-width: 6px 6px 0px 6px;
+	height: 0;
+	width: 0;
+	position: absolute;
+	right: 8px;
+	top: 15px;
+}
